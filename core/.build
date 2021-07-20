@@ -25,7 +25,6 @@ Core.DataDonation.Tools.html
 Core.DataDonation.Upload.html
 Core.DataDonation.UserData.html
 Core.Devices.html
-Core.EmailLayoutView.html
 Core.Factories.html
 Core.ImageCatalog.Local.html
 Core.ImageCatalog.Unsplash.Client.html
@@ -33,6 +32,7 @@ Core.ImageCatalog.Unsplash.HTTP.html
 Core.ImageCatalog.Unsplash.html
 Core.ImageCatalog.html
 Core.ImageHelpers.html
+Core.Mailer.EmailLayoutView.html
 Core.Mailer.EmailView.html
 Core.Mailer.SignalHandlers.html
 Core.Mailer.html
@@ -193,8 +193,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-a2e1fc4eec.js
-dist/sidebar_items-59e291f9a4.js
+dist/search_items-cccd5488c7.js
+dist/sidebar_items-c5845bef82.js
 index.html
 readme.html
 search.html
