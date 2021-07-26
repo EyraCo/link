@@ -10,7 +10,7 @@
     <title>API Reference — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-c5845bef82.js"></script>
+    <script src="dist/sidebar_items-cb38a4b3ab.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -166,11 +166,25 @@ and business logic.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Core.Accounts.NextActions.CompleteProfile.html">Core.Accounts.NextActions.CompleteProfile</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Core.Accounts.Profile.html">Core.Accounts.Profile</a>
 
   </div>
 
     <div class="summary-synopsis"><p>This schema contains profile related data for members.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Accounts.SignalHandlers.html">Core.Accounts.SignalHandlers</a>
+
+  </div>
 
 </div>
 <div class="summary-row">
@@ -416,6 +430,55 @@ For the time being a set of hardcoded marks are provided.</p></div>
   </div>
 
     <div class="summary-synopsis"><p>A sticker that represents some kind of authority.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.NextActions.html">Core.NextActions</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The NextActions context.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.NextActions.Live.NextAction.html">Core.NextActions.Live.NextAction</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h2 id="properties" class="section-heading">
+  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h2>
+<ul><li><strong>title</strong> <em>:string, required: true</em></li><li><strong>description</strong> <em>:string, required: true</em></li><li><strong>cta</strong> <em>:string, required: true</em></li><li><strong>url</strong> <em>:string, required: true</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.NextActions.Live.NextActionHighlight.html">Core.NextActions.Live.NextActionHighlight</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h2 id="properties-1" class="section-heading">
+  <a href="#properties-1" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h2>
+<ul><li><strong>actions</strong> <em>:list, required: true</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.NextActions.NextAction.html">Core.NextActions.NextAction</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.NextActions.ViewModel.html">Core.NextActions.ViewModel</a>
+
+  </div>
 
 </div>
 <div class="summary-row">
@@ -986,8 +1049,8 @@ and use that information to produce a localized format.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties" class="section-heading">
-  <a href="#properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-2" class="section-heading">
+  <a href="#properties-2" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -1014,8 +1077,8 @@ and use that information to produce a localized format.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-1" class="section-heading">
-  <a href="#properties-1" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-3" class="section-heading">
+  <a href="#properties-3" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live view.</li><li><strong>session</strong> <em>:map</em> - The request info necessary for the view, such as params, cookie session info, etc.
@@ -1044,11 +1107,11 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-2" class="section-heading">
-  <a href="#properties-2" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-4" class="section-heading">
+  <a href="#properties-4" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
-<ul><li><strong>devices</strong> <em>:any, required: true</em></li><li><strong>label</strong> <em>:string, required: true</em></li></ul></div>
+<ul><li><strong>title</strong> <em>:string, required: true</em></li><li><strong>description</strong> <em>:string, required: true</em></li><li><strong>cta</strong> <em>:string, required: true</em></li><li><strong>action</strong> <em>:string, required: true</em></li></ul></div>
 
 </div>
 <div class="summary-row">
@@ -1121,8 +1184,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-3" class="section-heading">
-  <a href="#properties-3" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-5" class="section-heading">
+  <a href="#properties-5" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -1242,8 +1305,8 @@ framework.</p></div>
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-4" class="section-heading">
-  <a href="#properties-4" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-6" class="section-heading">
+  <a href="#properties-6" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live view.</li><li><strong>session</strong> <em>:map</em> - The request info necessary for the view, such as params, cookie session info, etc.
@@ -1274,8 +1337,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-5" class="section-heading">
-  <a href="#properties-5" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-7" class="section-heading">
+  <a href="#properties-7" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -1349,6 +1412,13 @@ when the client connects, or reconnects to the stateful view.
 <div class="summary-row">
   <div class="summary-signature">
     <a href="CoreWeb.UploadedFileController.html">CoreWeb.UploadedFileController</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="CoreWeb.UrlResolver.html">CoreWeb.UrlResolver</a>
 
   </div>
 
@@ -1554,8 +1624,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-6" class="section-heading">
-  <a href="#properties-6" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-8" class="section-heading">
+  <a href="#properties-8" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -1568,8 +1638,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-7" class="section-heading">
-  <a href="#properties-7" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-9" class="section-heading">
+  <a href="#properties-9" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>monitor_data</strong> <em>:any, required: true</em></li></ul></div>

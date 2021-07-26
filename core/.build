@@ -6,7 +6,9 @@ Core.APNS.SignalHandlers.html
 Core.APNS.html
 Core.Accounts.Email.html
 Core.Accounts.EmailView.html
+Core.Accounts.NextActions.CompleteProfile.html
 Core.Accounts.Profile.html
+Core.Accounts.SignalHandlers.html
 Core.Accounts.User.html
 Core.Accounts.UserNotifier.html
 Core.Accounts.UserProfileEdit.html
@@ -38,6 +40,11 @@ Core.Mailer.SignalHandlers.html
 Core.Mailer.html
 Core.Marks.Mark.html
 Core.Marks.html
+Core.NextActions.Live.NextAction.html
+Core.NextActions.Live.NextActionHighlight.html
+Core.NextActions.NextAction.html
+Core.NextActions.ViewModel.html
+Core.NextActions.html
 Core.NotificationCenter.Box.html
 Core.NotificationCenter.Notification.html
 Core.NotificationCenter.SignalHandlers.html
@@ -147,6 +154,7 @@ CoreWeb.Router.html
 CoreWeb.Routes.html
 CoreWeb.Telemetry.html
 CoreWeb.UploadedFileController.html
+CoreWeb.UrlResolver.html
 CoreWeb.User.AwaitConfirmation.html
 CoreWeb.User.ConfirmToken.html
 CoreWeb.User.Profile.html
@@ -193,8 +201,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-cccd5488c7.js
-dist/sidebar_items-c5845bef82.js
+dist/search_items-6b091493cd.js
+dist/sidebar_items-cb38a4b3ab.js
 index.html
 readme.html
 search.html
