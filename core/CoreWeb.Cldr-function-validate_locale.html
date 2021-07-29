@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.validate_locale — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-cb38a4b3ab.js"></script>
+    <script src="dist/sidebar_items-b77a20d7a0.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -136,47 +136,47 @@ specification as implemented that includes the CLDR extensions for
   <a href="#validate_locale/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="5777755073-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="5777755073-1">)</span><span class="w">
-</span><span class="p" data-group-id="5777755073-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="5777755073-3">%</span><span class="nc" data-group-id="5777755073-3">Cldr.LanguageTag</span><span class="p" data-group-id="5777755073-3">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="4239863333-1">(</span><span class="s">&quot;en&quot;</span><span class="p" data-group-id="4239863333-1">)</span><span class="w">
+</span><span class="p" data-group-id="4239863333-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="4239863333-3">%</span><span class="nc" data-group-id="4239863333-3">Cldr.LanguageTag</span><span class="p" data-group-id="4239863333-3">{</span><span class="w">
   </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="p">,</span><span class="w">
   </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-Latn-US&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-4">%{</span><span class="p" data-group-id="5777755073-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-4">%{</span><span class="p" data-group-id="4239863333-4">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">gettext_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-5">%{</span><span class="p" data-group-id="5777755073-5">}</span><span class="p">,</span><span class="w">
-  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-6">[</span><span class="p" data-group-id="5777755073-6">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-5">%{</span><span class="p" data-group-id="4239863333-5">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-6">[</span><span class="p" data-group-id="4239863333-6">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:US</span><span class="p">,</span><span class="w">
-  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-7">%{</span><span class="p" data-group-id="5777755073-7">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-7">%{</span><span class="p" data-group-id="4239863333-7">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="p" data-group-id="5777755073-3">}</span><span class="p" data-group-id="5777755073-2">}</span><span class="w">
+</span><span class="p" data-group-id="4239863333-3">}</span><span class="p" data-group-id="4239863333-2">}</span><span class="w">
 
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_locale</span><span class="p" data-group-id="5777755073-8">(</span><span class="p" data-group-id="5777755073-8">)</span><span class="w">
-</span><span class="p" data-group-id="5777755073-9">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="5777755073-10">%</span><span class="nc" data-group-id="5777755073-10">Cldr.LanguageTag</span><span class="p" data-group-id="5777755073-10">{</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">default_locale</span><span class="p" data-group-id="4239863333-8">(</span><span class="p" data-group-id="4239863333-8">)</span><span class="w">
+</span><span class="p" data-group-id="4239863333-9">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="4239863333-10">%</span><span class="nc" data-group-id="4239863333-10">Cldr.LanguageTag</span><span class="p" data-group-id="4239863333-10">{</span><span class="w">
   </span><span class="ss">backend</span><span class="p">:</span><span class="w"> </span><span class="nc">CoreWeb.Cldr</span><span class="p">,</span><span class="w">
   </span><span class="ss">canonical_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-Latn-001&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">cldr_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-001&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-11">%{</span><span class="p" data-group-id="5777755073-11">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">extensions</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-11">%{</span><span class="p" data-group-id="4239863333-11">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">gettext_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">language</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-12">%{</span><span class="p" data-group-id="5777755073-12">}</span><span class="p">,</span><span class="w">
-  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-13">[</span><span class="p" data-group-id="5777755073-13">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-12">%{</span><span class="p" data-group-id="4239863333-12">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">private_use</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-13">[</span><span class="p" data-group-id="4239863333-13">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">rbnf_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">requested_locale_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;en-001&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">script</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Latn&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">territory</span><span class="p">:</span><span class="w"> </span><span class="ss">:&quot;001&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777755073-14">%{</span><span class="p" data-group-id="5777755073-14">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">transform</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4239863333-14">%{</span><span class="p" data-group-id="4239863333-14">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">language_variant</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-</span><span class="p" data-group-id="5777755073-10">}</span><span class="p" data-group-id="5777755073-9">}</span><span class="w">
+</span><span class="p" data-group-id="4239863333-10">}</span><span class="p" data-group-id="4239863333-9">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="5777755073-15">(</span><span class="s">&quot;zzz&quot;</span><span class="p" data-group-id="5777755073-15">)</span><span class="w">
-</span><span class="p" data-group-id="5777755073-16">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5777755073-17">{</span><span class="nc">Cldr.UnknownLocaleError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The locale </span><span class="se">\&quot;</span><span class="s">zzz</span><span class="se">\&quot;</span><span class="s"> is not known.&quot;</span><span class="p" data-group-id="5777755073-17">}</span><span class="p" data-group-id="5777755073-16">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr</span><span class="o">.</span><span class="n">validate_locale</span><span class="p" data-group-id="4239863333-15">(</span><span class="s">&quot;zzz&quot;</span><span class="p" data-group-id="4239863333-15">)</span><span class="w">
+</span><span class="p" data-group-id="4239863333-16">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4239863333-17">{</span><span class="nc">Cldr.UnknownLocaleError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The locale </span><span class="se">\&quot;</span><span class="s">zzz</span><span class="se">\&quot;</span><span class="s"> is not known.&quot;</span><span class="p" data-group-id="4239863333-17">}</span><span class="p" data-group-id="4239863333-16">}</span></code></pre>
   </section>
 </section>
 

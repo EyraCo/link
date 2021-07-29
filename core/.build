@@ -130,6 +130,10 @@ CoreWeb.ImageCatalogPicker.html
 CoreWeb.Index.html
 CoreWeb.LanguageSwitchController.html
 CoreWeb.LayoutView.html
+CoreWeb.Layouts.Website.Component.html
+CoreWeb.Layouts.Website.MenuBuilder.html
+CoreWeb.Layouts.Workspace.Component.html
+CoreWeb.Layouts.Workspace.MenuBuilder.html
 CoreWeb.Live.DataDonation.Routes.html
 CoreWeb.Live.Promotion.Routes.html
 CoreWeb.Live.Routes.html
@@ -140,6 +144,10 @@ CoreWeb.LiveForm.html
 CoreWeb.LiveLocale.html
 CoreWeb.Loaders.html
 CoreWeb.LocalImageCatalogPlug.html
+CoreWeb.Menu.Builder.html
+CoreWeb.Menu.Helpers.html
+CoreWeb.Menu.Items.html
+CoreWeb.Menu.ItemsProvider.html
 CoreWeb.MultiFormAutoSave.html
 CoreWeb.Notifications.html
 CoreWeb.ParticipantView.html
@@ -160,6 +168,8 @@ CoreWeb.User.ConfirmToken.html
 CoreWeb.User.Profile.html
 CoreWeb.User.ResetPassword.html
 CoreWeb.User.ResetPasswordToken.html
+CoreWeb.User.Service.html
+CoreWeb.User.Settings.html
 CoreWeb.User.Signup.html
 CoreWeb.UserAuth.html
 CoreWeb.UserSessionController.html
@@ -178,6 +188,7 @@ GoogleSignIn.User.html
 GoogleSignIn.html
 Link.Dashboard.Card.html
 Link.Dashboard.html
+Link.Menu.Items.html
 Link.Survey.Complete.html
 Link.Survey.Content.html
 Link.Survey.Form.html
@@ -201,8 +212,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-6b091493cd.js
-dist/sidebar_items-cb38a4b3ab.js
+dist/search_items-92ae9294b6.js
+dist/sidebar_items-b77a20d7a0.js
 index.html
 readme.html
 search.html

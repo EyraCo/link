@@ -1,4 +1,6 @@
 404.html
+EyraUI.Alignment.HorizontalCenter.html
+EyraUI.Alignment.VerticalCenter.html
 EyraUI.AutoSave.html
 EyraUI.Block.html
 EyraUI.Button.BackButton.html
@@ -18,6 +20,7 @@ EyraUI.Button.SubmitWideButton.html
 EyraUI.CampaignBanner.html
 EyraUI.Card.ButtonCard.html
 EyraUI.Card.Card.html
+EyraUI.Card.ClickableCard.html
 EyraUI.Card.Highlight.html
 EyraUI.Card.Label.html
 EyraUI.Card.PrimaryCTA.html
@@ -44,6 +47,19 @@ EyraUI.Hero.HeroSmall.html
 EyraUI.Icon.html
 EyraUI.Image.html
 EyraUI.Line.html
+EyraUI.Navigation.Alpine.html
+EyraUI.Navigation.Button.html
+EyraUI.Navigation.Delete.html
+EyraUI.Navigation.DesktopMenu.html
+EyraUI.Navigation.DesktopNavbar.html
+EyraUI.Navigation.Get.html
+EyraUI.Navigation.GetDead.html
+EyraUI.Navigation.Menu.html
+EyraUI.Navigation.MenuItem.html
+EyraUI.Navigation.MobileMenu.html
+EyraUI.Navigation.MobileNavbar.html
+EyraUI.Navigation.NativeMenu.html
+EyraUI.Navigation.Navbar.html
 EyraUI.Panel.Panel.html
 EyraUI.Panel.USP.html
 EyraUI.Selectors.Label.html
@@ -68,6 +84,7 @@ EyraUI.Text.Title4.html
 EyraUI.Text.Title5.html
 EyraUI.Text.Title6.html
 EyraUI.Timestamp.html
+EyraUI.ViewModel.html
 api-reference.html
 dist/app-f27ff079945e43879c46.js
 dist/elixir-a172fe91e725dcb259e2.css
@@ -75,7 +92,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-c8ae925949.js
-dist/sidebar_items-34a18027eb.js
+dist/search_items-67918b8915.js
+dist/sidebar_items-ea27a0786a.js
 index.html
 search.html
