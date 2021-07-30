@@ -109,6 +109,7 @@ CoreWeb.Cldr.Rbnf.Spellout.html
 CoreWeb.Cldr.Time.Interval.html
 CoreWeb.Cldr.Time.html
 CoreWeb.Cldr.html
+CoreWeb.Components.ContentListItem.html
 CoreWeb.Dashboard.html
 CoreWeb.DataDonation.Content.html
 CoreWeb.DataDonation.Form.html
@@ -144,6 +145,7 @@ CoreWeb.LiveForm.html
 CoreWeb.LiveLocale.html
 CoreWeb.Loaders.html
 CoreWeb.LocalImageCatalogPlug.html
+CoreWeb.Marketplace.html
 CoreWeb.Menu.Builder.html
 CoreWeb.Menu.Helpers.html
 CoreWeb.Menu.Items.html
@@ -187,12 +189,12 @@ GoogleSignIn.CallbackPlug.html
 GoogleSignIn.PlugUtils.html
 GoogleSignIn.User.html
 GoogleSignIn.html
-Link.Dashboard.Card.html
 Link.Dashboard.html
 Link.Index.html
 Link.LabStudy.Overview.html
 Link.Layouts.Website.MenuBuilder.html
 Link.Layouts.Workspace.MenuBuilder.html
+Link.Marketplace.Card.html
 Link.Marketplace.html
 Link.Menu.Items.html
 Link.StudentPool.html
@@ -220,8 +222,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-b55836480e.js
-dist/sidebar_items-9b9553b6e3.js
+dist/search_items-61437e8aab.js
+dist/sidebar_items-6d1a4e2a55.js
 index.html
 readme.html
 search.html
