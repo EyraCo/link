@@ -1,13 +1,13 @@
 defmodule EyraUI.Button.PrimaryButton do
   @moduledoc """
-  A colored button with white text
+  A colored button with white text.
   """
   use Surface.Component
   alias Surface.Components.LiveRedirect
 
   prop(to, :string, required: true)
   prop(label, :string, required: true)
-  prop(bg_color, :css_class, default: "bg-primary")
+  prop(bg_color, :css_class, default: ["bg-primary"])
 
   def render(assigns) do
     ~H"""

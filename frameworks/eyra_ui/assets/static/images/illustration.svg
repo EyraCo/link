@@ -1,0 +1,29 @@
+<svg width="696" height="370" viewBox="0 0 696 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="538" y="-2" width="217" height="206" stroke="white" stroke-width="4"/>
+<rect x="538" y="-2" width="217.102" height="441.333" stroke="white" stroke-width="4"/>
+<rect x="-2.82778" width="289.982" height="289.982" transform="matrix(0.706944 -0.707269 0.706944 0.707269 335.171 -2)" stroke="white" stroke-width="4"/>
+<path d="M376.347 -88L376.347 160.316C376.347 160.316 376.347 201.875 416.645 201.875C416.645 201.875 456.943 201.875 456.943 242.742C456.943 283.608 497.242 283.608 497.242 283.608H537.881" stroke="white" stroke-width="4"/>
+<path d="M635.26 0.34166C635.26 53.3941 592.273 96.4 539.247 96.4C486.221 96.4 443.234 53.3941 443.234 0.34166C443.234 -52.7108 486.221 -95.7167 539.247 -95.7167C592.273 -95.7167 635.26 -52.7108 635.26 0.34166Z" stroke="white" stroke-width="4"/>
+<g clip-path="url(#clip0)">
+<circle cx="539.406" cy="0.5" r="141.5" fill="white" stroke="white" stroke-width="4"/>
+</g>
+<g clip-path="url(#clip1)">
+<circle cx="697" cy="370" r="47" stroke="white" stroke-width="4"/>
+<circle cx="697" cy="370" r="83" stroke="white" stroke-width="4"/>
+<circle cx="697" cy="370" r="145.5" stroke="white" stroke-width="43"/>
+</g>
+<rect x="334" y="338.933" width="40.2981" height="40.3167" fill="white"/>
+<circle cx="177" cy="316" r="20" stroke="white" stroke-width="4"/>
+<circle cx="94.5" cy="357.5" r="39.5" stroke="white" stroke-width="4"/>
+<rect x="28" y="54" width="39" height="41" stroke="white" stroke-width="4"/>
+<path d="M199 112H232L199 145V112Z" fill="white"/>
+<rect y="96" width="26" height="26" fill="white"/>
+<defs>
+<clipPath id="clip0">
+<rect width="98.3547" height="98.4" fill="white" transform="translate(538.906)"/>
+</clipPath>
+<clipPath id="clip1">
+<rect width="206.955" height="235.067" fill="white" transform="translate(538.906 205)"/>
+</clipPath>
+</defs>
+</svg>

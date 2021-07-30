@@ -1,6 +1,7 @@
 defmodule EyraUI.Button.BackButton do
   @moduledoc """
-  A colored button with white text
+  A colored button with white text.
+
   """
   use Surface.Component
   alias Surface.Components.LiveRedirect

@@ -7,6 +7,7 @@ defmodule CoreWeb.Router do
   require Core.SurfConext
   require CoreWeb.Routes
   require CoreWeb.LocalImageCatalogPlug
+  import Surface.Catalogue.Router
 
   Core.BundleOverrides.routes()
 
@@ -29,5 +30,10 @@ defmodule CoreWeb.Router do
 
   if Mix.env() == :dev do
     forward("/sent_emails", Bamboo.SentEmailViewerPlug)
+
+    scope "/" do
+      pipe_through(:browser)
+      surface_catalogue("/catalogue")
+    end
   end
 end

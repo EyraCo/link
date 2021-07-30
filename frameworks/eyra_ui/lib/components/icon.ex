@@ -1,6 +1,14 @@
 defmodule EyraUI.Icon do
   @moduledoc """
-    Round icon with grey border
+  Round icon with grey border.
+
+  ## Examples
+  ```
+  <Icon
+    size="L"
+    src="test.png"
+  />
+  ```
   """
   use Surface.Component
 
