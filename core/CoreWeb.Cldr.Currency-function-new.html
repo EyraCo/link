@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.Currency.new — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-b77a20d7a0.js"></script>
+    <script src="dist/sidebar_items-9b9553b6e3.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -138,14 +138,14 @@ such as <code class="inline">0.05</code>. Optional.</li></ul><h2 id="new/2-retur
   <a href="#new/2-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Example
 </h2>
-<pre><code class="makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Currency</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="6750501465-1">(</span><span class="ss">:XAA</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custom Name&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">digits</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="6750501465-1">)</span><span class="w">
-  </span><span class="p" data-group-id="6750501465-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-   </span><span class="p" data-group-id="6750501465-3">%</span><span class="nc" data-group-id="6750501465-3">Cldr.Currency</span><span class="p" data-group-id="6750501465-3">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Currency</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="0772773388-1">(</span><span class="ss">:XAA</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custom Name&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">digits</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="0772773388-1">)</span><span class="w">
+  </span><span class="p" data-group-id="0772773388-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+   </span><span class="p" data-group-id="0772773388-3">%</span><span class="nc" data-group-id="0772773388-3">Cldr.Currency</span><span class="p" data-group-id="0772773388-3">{</span><span class="w">
      </span><span class="ss">alt_code</span><span class="p">:</span><span class="w"> </span><span class="ss">:XAA</span><span class="p">,</span><span class="w">
      </span><span class="ss">cash_digits</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
      </span><span class="ss">cash_rounding</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
      </span><span class="ss">code</span><span class="p">:</span><span class="w"> </span><span class="ss">:XAA</span><span class="p">,</span><span class="w">
-     </span><span class="ss">count</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6750501465-4">%{</span><span class="ss">other</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custom Name&quot;</span><span class="p" data-group-id="6750501465-4">}</span><span class="p">,</span><span class="w">
+     </span><span class="ss">count</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0772773388-4">%{</span><span class="ss">other</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custom Name&quot;</span><span class="p" data-group-id="0772773388-4">}</span><span class="p">,</span><span class="w">
      </span><span class="ss">digits</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
      </span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
      </span><span class="ss">iso_digits</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
@@ -155,13 +155,13 @@ such as <code class="inline">0.05</code>. Optional.</li></ul><h2 id="new/2-retur
      </span><span class="ss">symbol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XAA&quot;</span><span class="p">,</span><span class="w">
      </span><span class="ss">tender</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
      </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w">
-   </span><span class="p" data-group-id="6750501465-3">}</span><span class="p" data-group-id="6750501465-2">}</span><span class="w">
+   </span><span class="p" data-group-id="0772773388-3">}</span><span class="p" data-group-id="0772773388-2">}</span><span class="w">
 
- </span><span class="gp unselectable">iex&gt; </span><span class="nc">MyApp.Cldr.Currency</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="6750501465-5">(</span><span class="ss">:XAA</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custom Name&quot;</span><span class="p" data-group-id="6750501465-5">)</span><span class="w">
- </span><span class="p" data-group-id="6750501465-6">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Required options are missing. Required options are [:name, :digits]&quot;</span><span class="p" data-group-id="6750501465-6">}</span><span class="w">
+ </span><span class="gp unselectable">iex&gt; </span><span class="nc">MyApp.Cldr.Currency</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="0772773388-5">(</span><span class="ss">:XAA</span><span class="p">,</span><span class="w"> </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Custom Name&quot;</span><span class="p" data-group-id="0772773388-5">)</span><span class="w">
+ </span><span class="p" data-group-id="0772773388-6">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Required options are missing. Required options are [:name, :digits]&quot;</span><span class="p" data-group-id="0772773388-6">}</span><span class="w">
 
- </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Currency</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="6750501465-7">(</span><span class="ss">:XBC</span><span class="p" data-group-id="6750501465-7">)</span><span class="w">
- </span><span class="p" data-group-id="6750501465-8">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6750501465-9">{</span><span class="nc">Cldr.CurrencyAlreadyDefined</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Currency :XBC is already defined.&quot;</span><span class="p" data-group-id="6750501465-9">}</span><span class="p" data-group-id="6750501465-8">}</span></code></pre>
+ </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Currency</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="0772773388-7">(</span><span class="ss">:XBC</span><span class="p" data-group-id="0772773388-7">)</span><span class="w">
+ </span><span class="p" data-group-id="0772773388-8">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0772773388-9">{</span><span class="nc">Cldr.CurrencyAlreadyDefined</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Currency :XBC is already defined.&quot;</span><span class="p" data-group-id="0772773388-9">}</span><span class="p" data-group-id="0772773388-8">}</span></code></pre>
   </section>
 </section>
 
