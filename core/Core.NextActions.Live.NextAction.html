@@ -10,7 +10,7 @@
     <title>Core.NextActions.Live.NextAction — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-4e7a5bd3e0.js"></script>
+    <script src="dist/sidebar_items-dbb72c8777.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -99,7 +99,7 @@ Core.NextActions.Live.NextAction <small class="app-vsn">(core v0.1.0)</small>
   <a href="#module-properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
-<ul><li><strong>title</strong> <em>:string, required: true</em></li><li><strong>description</strong> <em>:string, required: true</em></li><li><strong>cta</strong> <em>:string, required: true</em></li><li><strong>url</strong> <em>:string, required: true</em></li><li><strong>highlighted</strong> <em>:boolean, default: false</em></li></ul>
+<ul><li><strong>title_css</strong> <em>:css_class, default: &quot;font-title7 text-title7 md:font-title5 md:text-title5 text-grey1&quot;</em></li><li><strong>subtitle_css</strong> <em>:css_class, default: &quot;text-bodysmall md:text-bodymedium font-body text-grey1&quot;</em></li><li><strong>vm</strong> <em>:map, required: true</em></li></ul>
         </section>
 
 
@@ -116,6 +116,69 @@ Core.NextActions.Live.NextAction <small class="app-vsn">(core v0.1.0)</small>
     <h2>
       <a href="#functions">Functions</a>
     </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#colors/1">colors(arg1)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#cta/2">cta(view_model, default \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#description/2">description(view_model, default \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_cta?/1">has_cta?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_description?/1">has_description?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_highlighted?/1">has_highlighted?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_title?/1">has_title?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_url?/1">has_url?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#highlighted?/2">highlighted?(view_model, default \\ false)</a>
+
+  </div>
+
+</div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#mount/1">mount(socket)</a>
@@ -136,11 +199,25 @@ Core.NextActions.Live.NextAction <small class="app-vsn">(core v0.1.0)</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#title/2">title(view_model, default \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#update/2">update(assigns, socket)</a>
 
   </div>
 
     <div class="summary-synopsis"><p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveComponent.html#c:update/2"><code class="inline">Phoenix.LiveComponent.update/2</code></a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#url/2">url(view_model, default \\ nil)</a>
+
+  </div>
 
 </div>
 
@@ -158,6 +235,210 @@ Core.NextActions.Live.NextAction <small class="app-vsn">(core v0.1.0)</small>
 Functions
           </h1>
           <div class="functions-list">
+<section class="detail" id="colors/1">
+
+  <div class="detail-header">
+    <a href="#colors/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">colors(arg1)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L24" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="cta/2">
+
+    <span id="cta/1"></span>
+
+  <div class="detail-header">
+    <a href="#cta/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">cta(view_model, default \\ nil)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="description/2">
+
+    <span id="description/1"></span>
+
+  <div class="detail-header">
+    <a href="#description/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">description(view_model, default \\ nil)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_cta?/1">
+
+  <div class="detail-header">
+    <a href="#has_cta?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_cta?(view_model)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_description?/1">
+
+  <div class="detail-header">
+    <a href="#has_description?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_description?(view_model)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_highlighted?/1">
+
+  <div class="detail-header">
+    <a href="#has_highlighted?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_highlighted?(view_model)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_title?/1">
+
+  <div class="detail-header">
+    <a href="#has_title?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_title?(view_model)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_url?/1">
+
+  <div class="detail-header">
+    <a href="#has_url?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_url?(view_model)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="highlighted?/2">
+
+    <span id="highlighted?/1"></span>
+
+  <div class="detail-header">
+    <a href="#highlighted?/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">highlighted?(view_model, default \\ false)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="mount/1">
 
   <div class="detail-header">
@@ -189,7 +470,7 @@ Functions
     </a>
     <h1 class="signature">render(assigns)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L11" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L42" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -200,6 +481,30 @@ Functions
   <section class="docstring">
 
 <p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveComponent.html#c:render/1"><code class="inline">Phoenix.LiveComponent.render/1</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="title/2">
+
+    <span id="title/1"></span>
+
+  <div class="detail-header">
+    <a href="#title/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">title(view_model, default \\ nil)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
   </section>
 </section>
 <section class="detail" id="update/2">
@@ -222,6 +527,30 @@ Functions
   <section class="docstring">
 
 <p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveComponent.html#c:update/2"><code class="inline">Phoenix.LiveComponent.update/2</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="url/2">
+
+    <span id="url/1"></span>
+
+  <div class="detail-header">
+    <a href="#url/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">url(view_model, default \\ nil)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/next_actions/live/next_action.ex#L4" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
   </section>
 </section>
 

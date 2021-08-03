@@ -30,6 +30,7 @@ EyraUI.Card.Study.html
 EyraUI.Case.Case.html
 EyraUI.Case.False.html
 EyraUI.Case.True.html
+EyraUI.Component.html
 EyraUI.Components.OldSkool.html
 EyraUI.Container.Bar.html
 EyraUI.Container.BarItem.html
@@ -92,7 +93,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-1e2d51e3fe.js
-dist/sidebar_items-a4d90b1b08.js
+dist/search_items-c62574ee88.js
+dist/sidebar_items-a79fea3da5.js
 index.html
 search.html
