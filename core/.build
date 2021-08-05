@@ -6,6 +6,7 @@ Core.APNS.SignalHandlers.html
 Core.APNS.html
 Core.Accounts.Email.html
 Core.Accounts.EmailView.html
+Core.Accounts.Features.html
 Core.Accounts.NextActions.CompleteProfile.html
 Core.Accounts.Profile.html
 Core.Accounts.SignalHandlers.html
@@ -26,7 +27,14 @@ Core.DataDonation.Tool.html
 Core.DataDonation.Tools.html
 Core.DataDonation.Upload.html
 Core.DataDonation.UserData.html
-Core.Devices.html
+Core.Eligibility.Criteria.html
+Core.Enums.Base.html
+Core.Enums.Devices.html
+Core.Enums.DominantHands.html
+Core.Enums.Genders.html
+Core.Enums.NativeLanguages.html
+Core.Enums.StudyProgramCodes.html
+Core.Enums.Themes.html
 Core.Factories.html
 Core.ImageCatalog.Local.html
 Core.ImageCatalog.Unsplash.Client.html
@@ -76,7 +84,6 @@ Core.Survey.Participant.html
 Core.Survey.Task.html
 Core.Survey.Tool.html
 Core.Survey.Tools.html
-Core.Themes.html
 Core.WebPush.Backend.html
 Core.WebPush.Keys.html
 Core.WebPush.PushSubscription.html
@@ -229,8 +236,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-ff8969911a.js
-dist/sidebar_items-1a3445b3cb.js
+dist/search_items-1925bbadbb.js
+dist/sidebar_items-aa4a95e339.js
 index.html
 readme.html
 search.html
