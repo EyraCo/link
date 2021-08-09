@@ -61,9 +61,9 @@ Core.NotificationCenter.Box.html
 Core.NotificationCenter.Notification.html
 Core.NotificationCenter.SignalHandlers.html
 Core.NotificationCenter.html
+Core.Persister.html
 Core.Promotions.CallToAction.Target.html
 Core.Promotions.CallToAction.html
-Core.Promotions.FormData.html
 Core.Promotions.Promotion.html
 Core.Promotions.html
 Core.Release.html
@@ -79,7 +79,6 @@ Core.SurfConext.CallbackPlug.html
 Core.SurfConext.PlugUtils.html
 Core.SurfConext.User.html
 Core.SurfConext.html
-Core.Survey.FormData.html
 Core.Survey.Participant.html
 Core.Survey.Task.html
 Core.Survey.Tool.html
@@ -181,6 +180,9 @@ CoreWeb.UploadedFileController.html
 CoreWeb.UrlResolver.html
 CoreWeb.User.AwaitConfirmation.html
 CoreWeb.User.ConfirmToken.html
+CoreWeb.User.Forms.Features.html
+CoreWeb.User.Forms.Profile.html
+CoreWeb.User.Forms.Study.html
 CoreWeb.User.Profile.html
 CoreWeb.User.ResetPassword.html
 CoreWeb.User.ResetPasswordToken.html
@@ -236,8 +238,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-1925bbadbb.js
-dist/sidebar_items-aa4a95e339.js
+dist/search_items-4dbbf1bb82.js
+dist/sidebar_items-39dd9d8e2b.js
 index.html
 readme.html
 search.html

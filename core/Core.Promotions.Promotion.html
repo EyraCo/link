@@ -10,7 +10,7 @@
     <title>Core.Promotions.Promotion — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-aa4a95e339.js"></script>
+    <script src="dist/sidebar_items-39dd9d8e2b.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -114,6 +114,27 @@ Core.Promotions.Promotion <small class="app-vsn">(core v0.1.0)</small>
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#changeset/3">changeset(promotion, arg2, params)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_byline/1">get_byline(promotion)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_image_url/2">get_image_url(promotion, map)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#get_organisation/1">get_organisation(promotion)</a>
 
   </div>
@@ -128,7 +149,7 @@ Core.Promotions.Promotion <small class="app-vsn">(core v0.1.0)</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#node_changeset/3">node_changeset(node, tool, attrs)</a>
+    <a href="#node_changeset/3">node_changeset(node, entity, attrs)</a>
 
   </div>
 
@@ -142,14 +163,7 @@ Core.Promotions.Promotion <small class="app-vsn">(core v0.1.0)</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#ready?/2">ready?(node, attrs)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#save_node/1">save_node(changeset)</a>
+    <a href="#ready?/2">ready?(entity, attrs)</a>
 
   </div>
 
@@ -176,6 +190,72 @@ Core.Promotions.Promotion <small class="app-vsn">(core v0.1.0)</small>
 Functions
           </h1>
           <div class="functions-list">
+<section class="detail" id="changeset/3">
+
+  <div class="detail-header">
+    <a href="#changeset/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">changeset(promotion, arg2, params)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L61" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_byline/1">
+
+  <div class="detail-header">
+    <a href="#get_byline/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_byline(promotion)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L97" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="get_image_url/2">
+
+  <div class="detail-header">
+    <a href="#get_image_url/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_image_url(promotion, map)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L109" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="get_organisation/1">
 
   <div class="detail-header">
@@ -185,7 +265,7 @@ Functions
     </a>
     <h1 class="signature">get_organisation(promotion)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L75" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L85" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -207,7 +287,7 @@ Functions
     </a>
     <h1 class="signature">get_themes(promotion)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L67" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L77" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -227,7 +307,7 @@ Functions
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">node_changeset(node, tool, attrs)</h1>
+    <h1 class="signature">node_changeset(node, entity, attrs)</h1>
 
       <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L6" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -251,7 +331,7 @@ Functions
     </a>
     <h1 class="signature">published?(promotion)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L63" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L73" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -271,29 +351,7 @@ Functions
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">ready?(node, attrs)</h1>
-
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L6" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
-  </section>
-</section>
-<section class="detail" id="save_node/1">
-
-  <div class="detail-header">
-    <a href="#save_node/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">save_node(changeset)</h1>
+    <h1 class="signature">ready?(entity, attrs)</h1>
 
       <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L6" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -317,7 +375,7 @@ Functions
     </a>
     <h1 class="signature">to_map(promotion)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/promotions/promotion.ex#L56" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
