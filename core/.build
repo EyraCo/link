@@ -58,6 +58,7 @@ Core.NextActions.NextAction.html
 Core.NextActions.ViewModel.html
 Core.NextActions.html
 Core.NotificationCenter.Box.html
+Core.NotificationCenter.Log.html
 Core.NotificationCenter.Notification.html
 Core.NotificationCenter.SignalHandlers.html
 Core.NotificationCenter.html
@@ -69,6 +70,7 @@ Core.Promotions.html
 Core.Release.html
 Core.Repo.html
 Core.Signals.Handlers.html
+Core.Signals.Test.html
 Core.Signals.html
 Core.Studies.Author.html
 Core.Studies.Participant.html
@@ -238,8 +240,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-4dbbf1bb82.js
-dist/sidebar_items-39dd9d8e2b.js
+dist/search_items-864cb451d4.js
+dist/sidebar_items-03d454e9f4.js
 index.html
 readme.html
 search.html
