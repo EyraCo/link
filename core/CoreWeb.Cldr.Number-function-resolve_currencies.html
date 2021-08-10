@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.Number.resolve_currencies — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-e2be3c7322.js"></script>
+    <script src="dist/sidebar_items-50bad58940.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -150,17 +150,17 @@ financial instruments.</p></li></ul><h2 id="resolve_currencies/2-examples" class
   <a href="#resolve_currencies/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">scan</span><span class="p" data-group-id="3810240140-1">(</span><span class="s">&quot;100 US dollars&quot;</span><span class="p" data-group-id="3810240140-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">scan</span><span class="p" data-group-id="8995639546-1">(</span><span class="s">&quot;100 US dollars&quot;</span><span class="p" data-group-id="8995639546-1">)</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currencies</span><span class="w">
-</span><span class="p" data-group-id="3810240140-2">[</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">:USD</span><span class="p" data-group-id="3810240140-2">]</span><span class="w">
+</span><span class="p" data-group-id="8995639546-2">[</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">:USD</span><span class="p" data-group-id="8995639546-2">]</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">scan</span><span class="p" data-group-id="3810240140-3">(</span><span class="s">&quot;100 eurosports&quot;</span><span class="p" data-group-id="3810240140-3">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currencies</span><span class="p" data-group-id="3810240140-4">(</span><span class="ss">fuzzy</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="p" data-group-id="3810240140-4">)</span><span class="w">
-</span><span class="p" data-group-id="3810240140-5">[</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">:EUR</span><span class="p" data-group-id="3810240140-5">]</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">scan</span><span class="p" data-group-id="8995639546-3">(</span><span class="s">&quot;100 eurosports&quot;</span><span class="p" data-group-id="8995639546-3">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currencies</span><span class="p" data-group-id="8995639546-4">(</span><span class="ss">fuzzy</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="p" data-group-id="8995639546-4">)</span><span class="w">
+</span><span class="p" data-group-id="8995639546-5">[</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">:EUR</span><span class="p" data-group-id="8995639546-5">]</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">scan</span><span class="p" data-group-id="3810240140-6">(</span><span class="s">&quot;100 dollars des États-Unis&quot;</span><span class="p" data-group-id="3810240140-6">)</span><span class="w">
-</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currencies</span><span class="p" data-group-id="3810240140-7">(</span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p" data-group-id="3810240140-7">)</span><span class="w">
-</span><span class="p" data-group-id="3810240140-8">[</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">:USD</span><span class="p" data-group-id="3810240140-8">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">scan</span><span class="p" data-group-id="8995639546-6">(</span><span class="s">&quot;100 dollars des États-Unis&quot;</span><span class="p" data-group-id="8995639546-6">)</span><span class="w">
+</span><span class="gp unselectable">...&gt; </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currencies</span><span class="p" data-group-id="8995639546-7">(</span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p" data-group-id="8995639546-7">)</span><span class="w">
+</span><span class="p" data-group-id="8995639546-8">[</span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">:USD</span><span class="p" data-group-id="8995639546-8">]</span></code></pre>
   </section>
 </section>
 

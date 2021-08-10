@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.DateTime.Format — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-e2be3c7322.js"></script>
+    <script src="dist/sidebar_items-50bad58940.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -378,9 +378,9 @@ or a <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.LanguageTag.html"><code cla
   Example
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">calendars_for</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="7783423971-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7783423971-2">[</span><span class="ss">:buddhist</span><span class="p">,</span><span class="w"> </span><span class="ss">:chinese</span><span class="p">,</span><span class="w"> </span><span class="ss">:coptic</span><span class="p">,</span><span class="w"> </span><span class="ss">:dangi</span><span class="p">,</span><span class="w"> </span><span class="ss">:ethiopic</span><span class="p">,</span><span class="w"> </span><span class="ss">:ethiopic_amete_alem</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="6509302214-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6509302214-2">[</span><span class="ss">:buddhist</span><span class="p">,</span><span class="w"> </span><span class="ss">:chinese</span><span class="p">,</span><span class="w"> </span><span class="ss">:coptic</span><span class="p">,</span><span class="w"> </span><span class="ss">:dangi</span><span class="p">,</span><span class="w"> </span><span class="ss">:ethiopic</span><span class="p">,</span><span class="w"> </span><span class="ss">:ethiopic_amete_alem</span><span class="p">,</span><span class="w">
  </span><span class="ss">:generic</span><span class="p">,</span><span class="w"> </span><span class="ss">:gregorian</span><span class="p">,</span><span class="w"> </span><span class="ss">:hebrew</span><span class="p">,</span><span class="w"> </span><span class="ss">:indian</span><span class="p">,</span><span class="w"> </span><span class="ss">:islamic</span><span class="p">,</span><span class="w"> </span><span class="ss">:islamic_civil</span><span class="p">,</span><span class="w">
- </span><span class="ss">:islamic_rgsa</span><span class="p">,</span><span class="w"> </span><span class="ss">:islamic_tbla</span><span class="p">,</span><span class="w"> </span><span class="ss">:islamic_umalqura</span><span class="p">,</span><span class="w"> </span><span class="ss">:japanese</span><span class="p">,</span><span class="w"> </span><span class="ss">:persian</span><span class="p">,</span><span class="w"> </span><span class="ss">:roc</span><span class="p" data-group-id="7783423971-2">]</span><span class="p" data-group-id="7783423971-1">}</span></code></pre>
+ </span><span class="ss">:islamic_rgsa</span><span class="p">,</span><span class="w"> </span><span class="ss">:islamic_tbla</span><span class="p">,</span><span class="w"> </span><span class="ss">:islamic_umalqura</span><span class="p">,</span><span class="w"> </span><span class="ss">:japanese</span><span class="p">,</span><span class="w"> </span><span class="ss">:persian</span><span class="p">,</span><span class="w"> </span><span class="ss">:roc</span><span class="p" data-group-id="6509302214-2">]</span><span class="p" data-group-id="6509302214-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="date_formats/2">
@@ -424,20 +424,20 @@ The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="date_
   Examples:
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="4612493093-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4612493093-2">%</span><span class="nc" data-group-id="4612493093-2">Cldr.Date.Styles</span><span class="p" data-group-id="4612493093-2">{</span><span class="w">
+</span><span class="p" data-group-id="0144914727-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0144914727-2">%</span><span class="nc" data-group-id="0144914727-2">Cldr.Date.Styles</span><span class="p" data-group-id="0144914727-2">{</span><span class="w">
   </span><span class="ss">full</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EEEE, MMMM d, y&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">long</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMMM d, y&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">medium</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM d, y&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">short</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;M/d/yy&quot;</span><span class="w">
-</span><span class="p" data-group-id="4612493093-2">}</span><span class="p" data-group-id="4612493093-1">}</span><span class="w">
+</span><span class="p" data-group-id="0144914727-2">}</span><span class="p" data-group-id="0144914727-1">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:buddhist</span><span class="w">
-</span><span class="p" data-group-id="4612493093-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4612493093-4">%</span><span class="nc" data-group-id="4612493093-4">Cldr.Date.Styles</span><span class="p" data-group-id="4612493093-4">{</span><span class="w">
+</span><span class="p" data-group-id="0144914727-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0144914727-4">%</span><span class="nc" data-group-id="0144914727-4">Cldr.Date.Styles</span><span class="p" data-group-id="0144914727-4">{</span><span class="w">
   </span><span class="ss">full</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EEEE, MMMM d, y G&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">long</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMMM d, y G&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">medium</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;MMM d, y G&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">short</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;M/d/y GGGGG&quot;</span><span class="w">
-</span><span class="p" data-group-id="4612493093-4">}</span><span class="p" data-group-id="4612493093-3">}</span></code></pre>
+</span><span class="p" data-group-id="0144914727-4">}</span><span class="p" data-group-id="0144914727-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="date_time_available_formats/2">
@@ -485,9 +485,9 @@ The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="date_
   Examples:
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_time_available_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="5491826955-1">{</span><span class="w">
+</span><span class="p" data-group-id="3022087518-1">{</span><span class="w">
   </span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="5491826955-2">%{</span><span class="w">
+  </span><span class="p" data-group-id="3022087518-2">%{</span><span class="w">
     </span><span class="ss">bh</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h B&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">bhm</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm B&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">bhms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss B&quot;</span><span class="p">,</span><span class="w">
@@ -531,8 +531,8 @@ The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="date_
     </span><span class="ss">y_qqqq</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;QQQQ y&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">yw_count_one</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&#39;week&#39; w &#39;of&#39; Y&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">yw_count_other</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&#39;week&#39; w &#39;of&#39; Y&quot;</span><span class="w">
-  </span><span class="p" data-group-id="5491826955-2">}</span><span class="w">
-</span><span class="p" data-group-id="5491826955-1">}</span></code></pre>
+  </span><span class="p" data-group-id="3022087518-2">}</span><span class="w">
+</span><span class="p" data-group-id="3022087518-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="date_time_formats/2">
@@ -576,20 +576,20 @@ The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="date_
   Examples:
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_time_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="4199590856-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4199590856-2">%</span><span class="nc" data-group-id="4199590856-2">Cldr.DateTime.Styles</span><span class="p" data-group-id="4199590856-2">{</span><span class="w">
+</span><span class="p" data-group-id="0242160632-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0242160632-2">%</span><span class="nc" data-group-id="0242160632-2">Cldr.DateTime.Styles</span><span class="p" data-group-id="0242160632-2">{</span><span class="w">
   </span><span class="ss">full</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1} &#39;at&#39; {0}&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">long</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1} &#39;at&#39; {0}&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">medium</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1}, {0}&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">short</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1}, {0}&quot;</span><span class="w">
-</span><span class="p" data-group-id="4199590856-2">}</span><span class="p" data-group-id="4199590856-1">}</span><span class="w">
+</span><span class="p" data-group-id="0242160632-2">}</span><span class="p" data-group-id="0242160632-1">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_time_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:buddhist</span><span class="w">
-</span><span class="p" data-group-id="4199590856-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4199590856-4">%</span><span class="nc" data-group-id="4199590856-4">Cldr.DateTime.Styles</span><span class="p" data-group-id="4199590856-4">{</span><span class="w">
+</span><span class="p" data-group-id="0242160632-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0242160632-4">%</span><span class="nc" data-group-id="0242160632-4">Cldr.DateTime.Styles</span><span class="p" data-group-id="0242160632-4">{</span><span class="w">
   </span><span class="ss">full</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1} &#39;at&#39; {0}&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">long</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1} &#39;at&#39; {0}&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">medium</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1}, {0}&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">short</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{1}, {0}&quot;</span><span class="w">
-</span><span class="p" data-group-id="4199590856-4">}</span><span class="p" data-group-id="4199590856-3">}</span></code></pre>
+</span><span class="p" data-group-id="0242160632-4">}</span><span class="p" data-group-id="0242160632-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="date_time_interval_fallback/2">
@@ -637,7 +637,7 @@ The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="date_
   Examples:
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">date_time_interval_fallback</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:gregorian</span><span class="w">
-</span><span class="p" data-group-id="9494898828-1">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot; – &quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="9494898828-1">]</span></code></pre>
+</span><span class="p" data-group-id="3655595276-1">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="s">&quot; – &quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="3655595276-1">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="date_time_interval_formats/2">
@@ -781,7 +781,7 @@ for a timezone offset for a given locale.</p><h2 id="gmt_format/1-arguments" cla
   Example
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">gmt_format</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="0748178792-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0748178792-2">[</span><span class="s">&quot;GMT&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="0748178792-2">]</span><span class="p" data-group-id="0748178792-1">}</span></code></pre>
+</span><span class="p" data-group-id="0888283685-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0888283685-2">[</span><span class="s">&quot;GMT&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="0888283685-2">]</span><span class="p" data-group-id="0888283685-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="gmt_zero_format/1">
@@ -824,7 +824,7 @@ a given locale.</p><h2 id="gmt_zero_format/1-arguments" class="section-heading">
   Example
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">gmt_zero_format</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="1236393431-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;GMT&quot;</span><span class="p" data-group-id="1236393431-1">}</span></code></pre>
+</span><span class="p" data-group-id="8252408053-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;GMT&quot;</span><span class="p" data-group-id="8252408053-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="hour_format/1">
@@ -866,7 +866,7 @@ for a timezone offset for a given locale.</p><h2 id="hour_format/1-arguments" cl
   Example
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">hour_format</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="9450240881-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9450240881-2">{</span><span class="s">&quot;+HH:mm&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-HH:mm&quot;</span><span class="p" data-group-id="9450240881-2">}</span><span class="p" data-group-id="9450240881-1">}</span></code></pre>
+</span><span class="p" data-group-id="8004549387-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8004549387-2">{</span><span class="s">&quot;+HH:mm&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-HH:mm&quot;</span><span class="p" data-group-id="8004549387-2">}</span><span class="p" data-group-id="8004549387-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="language_has_noon_and_midnight?/1">
@@ -959,20 +959,20 @@ The default is <code class="inline">:gregorian</code></p></li></ul><h2 id="time_
   Examples:
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">time_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="w">
-</span><span class="p" data-group-id="3997139502-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3997139502-2">%</span><span class="nc" data-group-id="3997139502-2">Cldr.Time.Styles</span><span class="p" data-group-id="3997139502-2">{</span><span class="w">
+</span><span class="p" data-group-id="9333679286-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9333679286-2">%</span><span class="nc" data-group-id="9333679286-2">Cldr.Time.Styles</span><span class="p" data-group-id="9333679286-2">{</span><span class="w">
   </span><span class="ss">full</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a zzzz&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">long</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a z&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">medium</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">short</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm a&quot;</span><span class="w">
-</span><span class="p" data-group-id="3997139502-2">}</span><span class="p" data-group-id="3997139502-1">}</span><span class="w">
+</span><span class="p" data-group-id="9333679286-2">}</span><span class="p" data-group-id="9333679286-1">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">Elixir.CoreWeb.Cldr.DateTime.Format</span><span class="o">.</span><span class="n">time_formats</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:buddhist</span><span class="w">
-</span><span class="p" data-group-id="3997139502-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3997139502-4">%</span><span class="nc" data-group-id="3997139502-4">Cldr.Time.Styles</span><span class="p" data-group-id="3997139502-4">{</span><span class="w">
+</span><span class="p" data-group-id="9333679286-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9333679286-4">%</span><span class="nc" data-group-id="9333679286-4">Cldr.Time.Styles</span><span class="p" data-group-id="9333679286-4">{</span><span class="w">
   </span><span class="ss">full</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a zzzz&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">long</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a z&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">medium</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm:ss a&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">short</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;h:mm a&quot;</span><span class="w">
-</span><span class="p" data-group-id="3997139502-4">}</span><span class="p" data-group-id="3997139502-3">}</span></code></pre>
+</span><span class="p" data-group-id="9333679286-4">}</span><span class="p" data-group-id="9333679286-3">}</span></code></pre>
   </section>
 </section>
 
