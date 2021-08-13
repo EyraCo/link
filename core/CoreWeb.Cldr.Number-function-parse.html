@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.Number.parse — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-50bad58940.js"></script>
+    <script src="dist/sidebar_items-52e171bf8c.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -143,19 +143,19 @@ using the Elixir standard library functions.</p><h2 id="parse/2-examples" class=
   <a href="#parse/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6361407170-1">(</span><span class="s">&quot;＋1.000,34&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p" data-group-id="6361407170-1">)</span><span class="w">
-</span><span class="p" data-group-id="6361407170-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="mf">1000.34</span><span class="p" data-group-id="6361407170-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="7404694030-1">(</span><span class="s">&quot;＋1.000,34&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p" data-group-id="7404694030-1">)</span><span class="w">
+</span><span class="p" data-group-id="7404694030-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="mf">1000.34</span><span class="p" data-group-id="7404694030-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6361407170-3">(</span><span class="s">&quot;-1_000_000.34&quot;</span><span class="p" data-group-id="6361407170-3">)</span><span class="w">
-</span><span class="p" data-group-id="6361407170-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1000000.34</span><span class="p" data-group-id="6361407170-4">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="7404694030-3">(</span><span class="s">&quot;-1_000_000.34&quot;</span><span class="p" data-group-id="7404694030-3">)</span><span class="w">
+</span><span class="p" data-group-id="7404694030-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1000000.34</span><span class="p" data-group-id="7404694030-4">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6361407170-5">(</span><span class="s">&quot;1.000&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">number</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="6361407170-5">)</span><span class="w">
-</span><span class="p" data-group-id="6361407170-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p" data-group-id="6361407170-6">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="7404694030-5">(</span><span class="s">&quot;1.000&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">number</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="7404694030-5">)</span><span class="w">
+</span><span class="p" data-group-id="7404694030-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p" data-group-id="7404694030-6">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="6361407170-7">(</span><span class="s">&quot;＋1.000,34&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">number</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="6361407170-7">)</span><span class="w">
-</span><span class="p" data-group-id="6361407170-8">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="6361407170-9">{</span><span class="nc">Cldr.Number.ParseError</span><span class="p">,</span><span class="w">
-   </span><span class="s">&quot;The string </span><span class="se">\&quot;</span><span class="s">＋1.000,34</span><span class="se">\&quot;</span><span class="s"> could not be parsed as a number&quot;</span><span class="p" data-group-id="6361407170-9">}</span><span class="p" data-group-id="6361407170-8">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">parse</span><span class="p" data-group-id="7404694030-7">(</span><span class="s">&quot;＋1.000,34&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">number</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="7404694030-7">)</span><span class="w">
+</span><span class="p" data-group-id="7404694030-8">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="7404694030-9">{</span><span class="nc">Cldr.Number.ParseError</span><span class="p">,</span><span class="w">
+   </span><span class="s">&quot;The string </span><span class="se">\&quot;</span><span class="s">＋1.000,34</span><span class="se">\&quot;</span><span class="s"> could not be parsed as a number&quot;</span><span class="p" data-group-id="7404694030-9">}</span><span class="p" data-group-id="7404694030-8">}</span></code></pre>
   </section>
 </section>
 

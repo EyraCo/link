@@ -3,8 +3,16 @@ EyraUI.Alignment.HorizontalCenter.html
 EyraUI.Alignment.VerticalCenter.html
 EyraUI.AutoSave.html
 EyraUI.Block.html
+EyraUI.Button.Action.Click.html
+EyraUI.Button.Action.Redirect.html
+EyraUI.Button.Action.Send.html
+EyraUI.Button.Action.Submit.html
 EyraUI.Button.BackButton.html
 EyraUI.Button.DeleteButton.html
+EyraUI.Button.Face.Forward.html
+EyraUI.Button.Face.Primary.html
+EyraUI.Button.Face.PrimaryIcon.html
+EyraUI.Button.Face.Secondary.html
 EyraUI.Button.LinkButton.html
 EyraUI.Button.PrimaryAlpineButton.html
 EyraUI.Button.PrimaryButton.html
@@ -37,6 +45,7 @@ EyraUI.Container.BarItem.html
 EyraUI.Container.ContentArea.html
 EyraUI.Container.FormArea.html
 EyraUI.Create.html
+EyraUI.Dynamic.html
 EyraUI.ErrorHelpers.html
 EyraUI.FormHelpers.html
 EyraUI.Gettext.html
@@ -61,6 +70,7 @@ EyraUI.Navigation.MobileNavbar.html
 EyraUI.Navigation.NativeMenu.html
 EyraUI.Navigation.Navbar.html
 EyraUI.Navigation.New.html
+EyraUI.Navigation.TabbarItem.html
 EyraUI.Panel.Panel.html
 EyraUI.Panel.USP.html
 EyraUI.Selectors.Label.html
@@ -93,7 +103,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-c62574ee88.js
-dist/sidebar_items-a79fea3da5.js
+dist/search_items-4c5f326cd6.js
+dist/sidebar_items-f7d5522521.js
 index.html
 search.html

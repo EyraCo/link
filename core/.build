@@ -145,6 +145,8 @@ CoreWeb.Index.html
 CoreWeb.Lab.Public.html
 CoreWeb.LanguageSwitchController.html
 CoreWeb.LayoutView.html
+CoreWeb.Layouts.Stripped.Component.html
+CoreWeb.Layouts.Stripped.MenuBuilder.html
 CoreWeb.Layouts.Website.Component.html
 CoreWeb.Layouts.Website.MenuBuilder.html
 CoreWeb.Layouts.Workspace.Component.html
@@ -165,6 +167,7 @@ CoreWeb.Menu.Builder.html
 CoreWeb.Menu.Helpers.html
 CoreWeb.Menu.Items.html
 CoreWeb.Menu.ItemsProvider.html
+CoreWeb.Menu.ItemsTranslations.html
 CoreWeb.MultiFormAutoSave.html
 CoreWeb.Notifications.html
 CoreWeb.ParticipantView.html
@@ -216,6 +219,8 @@ Link.Layouts.Workspace.MenuBuilder.html
 Link.Marketplace.Card.html
 Link.Marketplace.html
 Link.Menu.Items.html
+Link.Menu.ItemsTranslations.html
+Link.Onboarding.html
 Link.StudentPool.html
 Link.Survey.Complete.html
 Link.Survey.Content.html
@@ -224,6 +229,7 @@ Link.Survey.Monitor.html
 Link.Survey.MonitorData.html
 Link.Survey.Overview.html
 Link.Survey.PromotionPlugin.html
+Link.User.Web.Profile.html
 Link.html
 Next.html
 SignInWithApple.Backend.html
@@ -241,8 +247,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-57fffd3dac.js
-dist/sidebar_items-50bad58940.js
+dist/search_items-9c549cbda1.js
+dist/sidebar_items-52e171bf8c.js
 index.html
 readme.html
 search.html
