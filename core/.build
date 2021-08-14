@@ -96,6 +96,7 @@ Core.WebPush.Worker.html
 Core.WebPush.html
 Core.html
 CoreWeb.APNSDeviceTokenController.html
+CoreWeb.Admin.CoordinatorManagement.html
 CoreWeb.ChangesetView.html
 CoreWeb.Cldr.Currency.html
 CoreWeb.Cldr.Date.Interval.html
@@ -152,6 +153,7 @@ CoreWeb.Layouts.Website.Component.html
 CoreWeb.Layouts.Website.MenuBuilder.html
 CoreWeb.Layouts.Workspace.Component.html
 CoreWeb.Layouts.Workspace.MenuBuilder.html
+CoreWeb.Live.Admin.Routes.html
 CoreWeb.Live.DataDonation.Routes.html
 CoreWeb.Live.Lab.Routes.html
 CoreWeb.Live.Promotion.Routes.html
@@ -248,8 +250,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-7f605e3b76.js
-dist/sidebar_items-e816370612.js
+dist/search_items-b70862248e.js
+dist/sidebar_items-ab5da0deef.js
 index.html
 readme.html
 search.html
