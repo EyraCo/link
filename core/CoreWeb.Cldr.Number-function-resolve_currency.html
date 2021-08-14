@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.Number.resolve_currency — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-52e171bf8c.js"></script>
+    <script src="dist/sidebar_items-d054bdae66.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -154,19 +154,19 @@ financial instruments.</p></li></ul><h2 id="resolve_currency/2-examples" class="
   <a href="#resolve_currency/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="2347049522-1">(</span><span class="s">&quot;US dollars&quot;</span><span class="p" data-group-id="2347049522-1">)</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="3215246094-1">(</span><span class="s">&quot;US dollars&quot;</span><span class="p" data-group-id="3215246094-1">)</span><span class="w">
 </span><span class="ss">:USD</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="2347049522-2">(</span><span class="s">&quot;100 eurosports&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">fuzzy</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="p" data-group-id="2347049522-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="3215246094-2">(</span><span class="s">&quot;100 eurosports&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">fuzzy</span><span class="p">:</span><span class="w"> </span><span class="mf">0.75</span><span class="p" data-group-id="3215246094-2">)</span><span class="w">
 </span><span class="ss">:EUR</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="2347049522-3">(</span><span class="s">&quot;dollars des États-Unis&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p" data-group-id="2347049522-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="3215246094-3">(</span><span class="s">&quot;dollars des États-Unis&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p" data-group-id="3215246094-3">)</span><span class="w">
 </span><span class="ss">:USD</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="2347049522-4">(</span><span class="s">&quot;not a known currency&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p" data-group-id="2347049522-4">)</span><span class="w">
-</span><span class="p" data-group-id="2347049522-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="2347049522-6">{</span><span class="nc">Cldr.UnknownCurrencyError</span><span class="p">,</span><span class="w">
-  </span><span class="s">&quot;The currency </span><span class="se">\&quot;</span><span class="s">not a known currency</span><span class="se">\&quot;</span><span class="s"> is unknown or not supported&quot;</span><span class="p" data-group-id="2347049522-6">}</span><span class="p" data-group-id="2347049522-5">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">resolve_currency</span><span class="p" data-group-id="3215246094-4">(</span><span class="s">&quot;not a known currency&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fr&quot;</span><span class="p" data-group-id="3215246094-4">)</span><span class="w">
+</span><span class="p" data-group-id="3215246094-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="3215246094-6">{</span><span class="nc">Cldr.UnknownCurrencyError</span><span class="p">,</span><span class="w">
+  </span><span class="s">&quot;The currency </span><span class="se">\&quot;</span><span class="s">not a known currency</span><span class="se">\&quot;</span><span class="s"> is unknown or not supported&quot;</span><span class="p" data-group-id="3215246094-6">}</span><span class="p" data-group-id="3215246094-5">}</span></code></pre>
   </section>
 </section>
 
