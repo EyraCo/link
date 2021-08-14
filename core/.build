@@ -64,6 +64,7 @@ Core.NotificationCenter.Notification.html
 Core.NotificationCenter.SignalHandlers.html
 Core.NotificationCenter.html
 Core.Persister.html
+Core.Pools.SignalHandlers.html
 Core.Promotions.CallToAction.Target.html
 Core.Promotions.CallToAction.html
 Core.Promotions.Promotion.html
@@ -247,8 +248,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-543a520762.js
-dist/sidebar_items-d054bdae66.js
+dist/search_items-7f605e3b76.js
+dist/sidebar_items-e816370612.js
 index.html
 readme.html
 search.html
