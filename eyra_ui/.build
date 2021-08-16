@@ -44,6 +44,8 @@ EyraUI.Container.Bar.html
 EyraUI.Container.BarItem.html
 EyraUI.Container.ContentArea.html
 EyraUI.Container.FormArea.html
+EyraUI.Container.SheetArea.html
+EyraUI.Container.Wrap.html
 EyraUI.Create.html
 EyraUI.Dynamic.html
 EyraUI.ErrorHelpers.html
@@ -103,7 +105,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-4978750b07.js
-dist/sidebar_items-f1de47a810.js
+dist/search_items-4362dc9147.js
+dist/sidebar_items-a05adb2238.js
 index.html
 search.html

@@ -217,6 +217,7 @@ GoogleSignIn.PlugUtils.html
 GoogleSignIn.User.html
 GoogleSignIn.html
 Link.Dashboard.html
+Link.Debug.html
 Link.Index.html
 Link.Lab.PromotionPlugin.html
 Link.LabStudy.Overview.html
@@ -226,7 +227,8 @@ Link.Marketplace.Card.html
 Link.Marketplace.html
 Link.Menu.Items.html
 Link.Menu.ItemsTranslations.html
-Link.Onboarding.html
+Link.Onboarding.Welcome.html
+Link.Onboarding.Wizard.html
 Link.StudentPool.html
 Link.Survey.Complete.html
 Link.Survey.Content.html
@@ -253,8 +255,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-10ae530ad1.js
-dist/sidebar_items-21aa322f8b.js
+dist/search_items-6244916bda.js
+dist/sidebar_items-510102caee.js
 index.html
 readme.html
 search.html
