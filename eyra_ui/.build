@@ -73,7 +73,7 @@ EyraUI.Navigation.New.html
 EyraUI.Navigation.TabbarItem.html
 EyraUI.Panel.Panel.html
 EyraUI.Panel.USP.html
-EyraUI.Selectors.Label.html
+EyraUI.Selector.Item.html
 EyraUI.Spacing.html
 EyraUI.Status.Error.html
 EyraUI.Status.Info.html
@@ -103,7 +103,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-4c5f326cd6.js
-dist/sidebar_items-f7d5522521.js
+dist/search_items-4978750b07.js
+dist/sidebar_items-f1de47a810.js
 index.html
 search.html
