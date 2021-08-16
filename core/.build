@@ -15,6 +15,7 @@ Core.Accounts.UserNotifier.html
 Core.Accounts.UserProfileEdit.html
 Core.Accounts.UserToken.html
 Core.Accounts.html
+Core.Admin.html
 Core.Authorization.Node.html
 Core.Authorization.RoleAssignment.html
 Core.Authorization.html
@@ -36,6 +37,7 @@ Core.Enums.NativeLanguages.html
 Core.Enums.StudyProgramCodes.html
 Core.Enums.Themes.html
 Core.Factories.html
+Core.FeatureFlags.Test.html
 Core.FeatureFlags.html
 Core.ImageCatalog.Local.html
 Core.ImageCatalog.Unsplash.Client.html
@@ -97,6 +99,7 @@ Core.WebPush.html
 Core.html
 CoreWeb.APNSDeviceTokenController.html
 CoreWeb.Admin.CoordinatorManagement.html
+CoreWeb.Admin.Login.html
 CoreWeb.ChangesetView.html
 CoreWeb.Cldr.Currency.html
 CoreWeb.Cldr.Date.Interval.html
@@ -250,8 +253,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-b70862248e.js
-dist/sidebar_items-ab5da0deef.js
+dist/search_items-10ae530ad1.js
+dist/sidebar_items-21aa322f8b.js
 index.html
 readme.html
 search.html
