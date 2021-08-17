@@ -8,6 +8,8 @@ Core.Accounts.Email.html
 Core.Accounts.EmailView.html
 Core.Accounts.Features.html
 Core.Accounts.NextActions.CompleteProfile.html
+Core.Accounts.NextActions.PromotePushStudent.html
+Core.Accounts.NextActions.SelectStudyStudent.html
 Core.Accounts.Profile.html
 Core.Accounts.SignalHandlers.html
 Core.Accounts.User.html
@@ -58,6 +60,7 @@ Core.Marks.html
 Core.NextActions.Live.NextAction.html
 Core.NextActions.Live.NextActionHighlight.html
 Core.NextActions.NextAction.html
+Core.NextActions.Test.html
 Core.NextActions.ViewModel.html
 Core.NextActions.html
 Core.NotificationCenter.Box.html
@@ -255,8 +258,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-6244916bda.js
-dist/sidebar_items-510102caee.js
+dist/search_items-3e54a24c38.js
+dist/sidebar_items-9024be9f8c.js
 index.html
 readme.html
 search.html

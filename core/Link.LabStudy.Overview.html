@@ -10,7 +10,7 @@
     <title>Link.LabStudy.Overview — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-510102caee.js"></script>
+    <script src="dist/sidebar_items-9024be9f8c.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -121,7 +121,35 @@ when the client connects, or reconnects to the stateful view.
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#build_menu/4">build_menu(socket, type, user, id \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#build_menus/3">build_menus(socket, user, id \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#builder/0">builder()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#current_user/1">current_user(arg1)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#handle_auto_save_done/1">handle_auto_save_done(socket)</a>
 
   </div>
 
@@ -144,6 +172,13 @@ when the client connects, or reconnects to the stateful view.
     <div class="summary-synopsis"><p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:render/1"><code class="inline">Phoenix.LiveView.render/1</code></a>.</p></div>
 
 </div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_menus/1">update_menus(socket)</a>
+
+  </div>
+
+</div>
 
   </div>
 
@@ -159,6 +194,76 @@ when the client connects, or reconnects to the stateful view.
 Functions
           </h1>
           <div class="functions-list">
+<section class="detail" id="build_menu/4">
+
+    <span id="build_menu/3"></span>
+
+  <div class="detail-header">
+    <a href="#build_menu/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">build_menu(socket, type, user, id \\ nil)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/lab/overview.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="build_menus/3">
+
+    <span id="build_menus/2"></span>
+
+  <div class="detail-header">
+    <a href="#build_menus/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">build_menus(socket, user, id \\ nil)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/lab/overview.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="builder/0">
+
+  <div class="detail-header">
+    <a href="#builder/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">builder()</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/lab/overview.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="current_user/1">
 
   <div class="detail-header">
@@ -169,6 +274,28 @@ Functions
     <h1 class="signature">current_user(arg1)</h1>
 
       <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/lab/overview.ex#L5" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="handle_auto_save_done/1">
+
+  <div class="detail-header">
+    <a href="#handle_auto_save_done/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">handle_auto_save_done(socket)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/lab/overview.ex#L15" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -223,6 +350,28 @@ Functions
   <section class="docstring">
 
 <p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:render/1"><code class="inline">Phoenix.LiveView.render/1</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="update_menus/1">
+
+  <div class="detail-header">
+    <a href="#update_menus/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_menus(socket)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/lab/overview.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
   </section>
 </section>
 
