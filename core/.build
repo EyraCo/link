@@ -140,6 +140,7 @@ CoreWeb.DataDonation.Uploader.html
 CoreWeb.DataDonationController.html
 CoreWeb.DataDonationView.html
 CoreWeb.Devices.html
+CoreWeb.Empty.html
 CoreWeb.Endpoint.html
 CoreWeb.ErrorView.html
 CoreWeb.FakeSurvey.html
@@ -195,6 +196,7 @@ CoreWeb.UploadedFileController.html
 CoreWeb.UrlResolver.html
 CoreWeb.User.AwaitConfirmation.html
 CoreWeb.User.ConfirmToken.html
+CoreWeb.User.Forms.Debug.html
 CoreWeb.User.Forms.Features.html
 CoreWeb.User.Forms.Profile.html
 CoreWeb.User.Forms.Study.html
@@ -232,7 +234,9 @@ Link.Menu.Items.html
 Link.Menu.ItemsTranslations.html
 Link.Onboarding.Welcome.html
 Link.Onboarding.Wizard.html
-Link.StudentPool.html
+Link.StudentPool.Overview.html
+Link.StudentPool.Students.html
+Link.StudentPool.Studies.html
 Link.Survey.Complete.html
 Link.Survey.Content.html
 Link.Survey.Form.html
@@ -240,7 +244,6 @@ Link.Survey.Monitor.html
 Link.Survey.MonitorData.html
 Link.Survey.Overview.html
 Link.Survey.PromotionPlugin.html
-Link.User.Web.Profile.html
 Link.html
 Next.html
 SignInWithApple.Backend.html
@@ -258,8 +261,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-3e54a24c38.js
-dist/sidebar_items-9024be9f8c.js
+dist/search_items-5a6c5d50a7.js
+dist/sidebar_items-db7555199e.js
 index.html
 readme.html
 search.html

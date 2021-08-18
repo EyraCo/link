@@ -10,7 +10,7 @@
     <title>Link.Debug — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-9024be9f8c.js"></script>
+    <script src="dist/sidebar_items-db7555199e.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -149,7 +149,16 @@ when the client connects, or reconnects to the stateful view.
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#handle_auto_save_done/1">handle_auto_save_done(socket)</a>
+    <a href="#handle_info/2">handle_info(arg1, socket)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:handle_info/2"><code class="inline">Phoenix.LiveView.handle_info/2</code></a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#hide_flash/1">hide_flash(socket)</a>
 
   </div>
 
@@ -165,11 +174,39 @@ when the client connects, or reconnects to the stateful view.
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#put_error_flash/1">put_error_flash(socket)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#put_saved_flash/1">put_saved_flash(socket)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#render/1">render(assigns)</a>
 
   </div>
 
     <div class="summary-synopsis"><p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:render/1"><code class="inline">Phoenix.LiveView.render/1</code></a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#schedule_hide_flash/1">schedule_hide_flash(socket)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#schedule_save/3">schedule_save(socket, id, changeset)</a>
+
+  </div>
 
 </div>
 <div class="summary-row">
@@ -205,7 +242,7 @@ Functions
     </a>
     <h1 class="signature">build_menu(socket, type, user, id \\ nil)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L7" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -229,7 +266,7 @@ Functions
     </a>
     <h1 class="signature">build_menus(socket, user, id \\ nil)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L7" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -251,7 +288,7 @@ Functions
     </a>
     <h1 class="signature">builder()</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L7" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -286,16 +323,38 @@ Functions
 
   </section>
 </section>
-<section class="detail" id="handle_auto_save_done/1">
+<section class="detail" id="handle_info/2">
 
   <div class="detail-header">
-    <a href="#handle_auto_save_done/1" class="detail-link" title="Link to this function">
+    <a href="#handle_info/2" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">handle_auto_save_done(socket)</h1>
+    <h1 class="signature">handle_info(arg1, socket)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L20" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:handle_info/2"><code class="inline">Phoenix.LiveView.handle_info/2</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="hide_flash/1">
+
+  <div class="detail-header">
+    <a href="#hide_flash/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">hide_flash(socket)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -330,6 +389,50 @@ Functions
 <p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:mount/3"><code class="inline">Phoenix.LiveView.mount/3</code></a>.</p>
   </section>
 </section>
+<section class="detail" id="put_error_flash/1">
+
+  <div class="detail-header">
+    <a href="#put_error_flash/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">put_error_flash(socket)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="put_saved_flash/1">
+
+  <div class="detail-header">
+    <a href="#put_saved_flash/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">put_saved_flash(socket)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="render/1">
 
   <div class="detail-header">
@@ -352,6 +455,50 @@ Functions
 <p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveView.html#c:render/1"><code class="inline">Phoenix.LiveView.render/1</code></a>.</p>
   </section>
 </section>
+<section class="detail" id="schedule_hide_flash/1">
+
+  <div class="detail-header">
+    <a href="#schedule_hide_flash/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">schedule_hide_flash(socket)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="schedule_save/3">
+
+  <div class="detail-header">
+    <a href="#schedule_save/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">schedule_save(socket, id, changeset)</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="update_menus/1">
 
   <div class="detail-header">
@@ -361,7 +508,7 @@ Functions
     </a>
     <h1 class="signature">update_menus(socket)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L6" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/bundles/link/lib/debug.ex#L7" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

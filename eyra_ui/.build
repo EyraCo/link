@@ -61,7 +61,8 @@ EyraUI.Image.html
 EyraUI.Line.html
 EyraUI.Navigation.Alpine.html
 EyraUI.Navigation.Button.html
-EyraUI.Navigation.Dead.html
+EyraUI.Navigation.DeadGet.html
+EyraUI.Navigation.DeadPost.html
 EyraUI.Navigation.DesktopMenu.html
 EyraUI.Navigation.DesktopNavbar.html
 EyraUI.Navigation.Get.html
@@ -105,7 +106,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-3e616529b5.js
-dist/sidebar_items-00ce69035e.js
+dist/search_items-b11c8d0a87.js
+dist/sidebar_items-ecfabb85aa.js
 index.html
 search.html
