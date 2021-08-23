@@ -9,6 +9,9 @@ EyraUI.Button.Action.Send.html
 EyraUI.Button.Action.Submit.html
 EyraUI.Button.BackButton.html
 EyraUI.Button.DeleteButton.html
+EyraUI.Button.DynamicAction.html
+EyraUI.Button.DynamicButton.html
+EyraUI.Button.DynamicFace.html
 EyraUI.Button.Face.Forward.html
 EyraUI.Button.Face.Primary.html
 EyraUI.Button.Face.PrimaryIcon.html
@@ -94,7 +97,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-aa00f87cdc.js
-dist/sidebar_items-e07a248822.js
+dist/search_items-d8bc35ca2e.js
+dist/sidebar_items-554051ec00.js
 index.html
 search.html

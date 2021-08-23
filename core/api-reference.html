@@ -10,7 +10,7 @@
     <title>API Reference — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-167f8f208a.js"></script>
+    <script src="dist/sidebar_items-001e35d7d9.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -357,15 +357,6 @@ device.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Core.Eligibility.Criteria.html">Core.Eligibility.Criteria</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p>This schema contains features of members.</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
     <a href="Core.Enums.Base.html">Core.Enums.Base</a>
 
   </div>
@@ -671,9 +662,61 @@ For the time being a set of hardcoded marks are provided.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="Core.Pools.html">Core.Pools</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Pools.Criteria.html">Core.Pools.Criteria</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>This schema contains features of members.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Pools.Participant.html">Core.Pools.Participant</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A task (donate data) to be completed by a participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Pools.Pool.html">Core.Pools.Pool</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>The pool schema.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="Core.Pools.SignalHandlers.html">Core.Pools.SignalHandlers</a>
 
   </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Pools.Submission.html">Core.Pools.Submission</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>A task (donate data) to be completed by a participant.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Core.Pools.Submissions.html">Core.Pools.Submissions</a>
+
+  </div>
+
+    <div class="summary-synopsis"></div>
 
 </div>
 <div class="summary-row">
@@ -1768,7 +1811,7 @@ when the client connects, or reconnects to the stateful view.
   <a href="#properties-10" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
-<ul><li><strong>to</strong> <em>:string, required: true</em></li><li><strong>title</strong> <em>:string, required: true</em></li><li><strong>description</strong> <em>:string, required: true</em></li><li><strong>quick_summary</strong> <em>:string, required: true</em></li><li><strong>status</strong> <em>:any, required: true</em></li><li><strong>image_id</strong> <em>:any, required: true</em></li><li><strong>title_css</strong> <em>:css_class, default: &quot;font-title7 text-title7 md:font-title5 md:text-title5 text-grey1&quot;</em></li><li><strong>subtitle_css</strong> <em>:css_class, default: &quot;text-bodysmall md:text-bodymedium font-body text-grey2&quot;</em></li></ul></div>
+<ul><li><strong>to</strong> <em>:string, required: true</em></li><li><strong>title</strong> <em>:string, required: true</em></li><li><strong>subtitle</strong> <em>:string, required: true</em></li><li><strong>quick_summary</strong> <em>:string, required: true</em></li><li><strong>label</strong> <em>:map, required: true</em></li><li><strong>image_id</strong> <em>:any, required: true</em></li><li><strong>title_css</strong> <em>:css_class, default: &quot;font-title7 text-title7 md:font-title5 md:text-title5 text-grey1&quot;</em></li><li><strong>subtitle_css</strong> <em>:css_class, default: &quot;text-bodysmall md:text-bodymedium font-body text-grey2&quot;</em></li></ul></div>
 
 </div>
 <div class="summary-row">
@@ -2236,16 +2279,7 @@ when the client connects, or reconnects to the stateful view.
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Link.StudentPool.Overview.html">Link.StudentPool.Overview</a>
-
-  </div>
-
-    <div class="summary-synopsis"><p> The student overview screen.</p></div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="Link.StudentPool.Students.html">Link.StudentPool.Students</a>
+    <a href="Link.Pool.Form.Submission.html">Link.Pool.Form.Submission</a>
 
   </div>
 
@@ -2254,12 +2288,12 @@ when the client connects, or reconnects to the stateful view.
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
-.</li><li><strong>user</strong> <em>:any, required: true</em></li></ul></div>
+.</li><li><strong>props</strong> <em>:any, required: true</em></li></ul></div>
 
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="Link.StudentPool.Studies.html">Link.StudentPool.Studies</a>
+    <a href="Link.StudentPool.Form.Students.html">Link.StudentPool.Form.Students</a>
 
   </div>
 
@@ -2269,6 +2303,29 @@ when the client connects, or reconnects to the stateful view.
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
 .</li><li><strong>user</strong> <em>:any, required: true</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Link.StudentPool.Form.Studies.html">Link.StudentPool.Form.Studies</a>
+
+  </div>
+
+    <div class="summary-synopsis"><h2 id="properties-18" class="section-heading">
+  <a href="#properties-18" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Properties
+</h2>
+<ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
+.</li><li><strong>user</strong> <em>:any, required: true</em></li></ul></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Link.StudentPool.Overview.html">Link.StudentPool.Overview</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p> The student overview screen.</p></div>
 
 </div>
 <div class="summary-row">
@@ -2295,8 +2352,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-18" class="section-heading">
-  <a href="#properties-18" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-19" class="section-heading">
+  <a href="#properties-19" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>id</strong> <em>:string, required: true</em> - The id of the live component (required by LiveView for stateful components).
@@ -2309,8 +2366,8 @@ when the client connects, or reconnects to the stateful view.
 
   </div>
 
-    <div class="summary-synopsis"><h2 id="properties-19" class="section-heading">
-  <a href="#properties-19" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+    <div class="summary-synopsis"><h2 id="properties-20" class="section-heading">
+  <a href="#properties-20" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
 <ul><li><strong>props</strong> <em>:map, required: true</em></li></ul></div>

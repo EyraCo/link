@@ -30,7 +30,6 @@ Core.DataDonation.Tool.html
 Core.DataDonation.Tools.html
 Core.DataDonation.Upload.html
 Core.DataDonation.UserData.html
-Core.Eligibility.Criteria.html
 Core.Enums.Base.html
 Core.Enums.Devices.html
 Core.Enums.DominantHands.html
@@ -69,7 +68,13 @@ Core.NotificationCenter.Notification.html
 Core.NotificationCenter.SignalHandlers.html
 Core.NotificationCenter.html
 Core.Persister.html
+Core.Pools.Criteria.html
+Core.Pools.Participant.html
+Core.Pools.Pool.html
 Core.Pools.SignalHandlers.html
+Core.Pools.Submission.html
+Core.Pools.Submissions.html
+Core.Pools.html
 Core.Promotions.CallToAction.Target.html
 Core.Promotions.CallToAction.html
 Core.Promotions.Promotion.html
@@ -251,9 +256,10 @@ Link.Menu.Items.html
 Link.Menu.ItemsTranslations.html
 Link.Onboarding.Welcome.html
 Link.Onboarding.Wizard.html
+Link.Pool.Form.Submission.html
+Link.StudentPool.Form.Students.html
+Link.StudentPool.Form.Studies.html
 Link.StudentPool.Overview.html
-Link.StudentPool.Students.html
-Link.StudentPool.Studies.html
 Link.Survey.Complete.html
 Link.Survey.Content.html
 Link.Survey.Form.html
@@ -278,8 +284,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-701169e4f2.js
-dist/sidebar_items-167f8f208a.js
+dist/search_items-229f1b2187.js
+dist/sidebar_items-001e35d7d9.js
 index.html
 readme.html
 search.html

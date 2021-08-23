@@ -10,7 +10,7 @@
     <title>CoreWeb.Cldr.Number.validate_number_system — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-167f8f208a.js"></script>
+    <script src="dist/sidebar_items-001e35d7d9.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -133,17 +133,17 @@ returned by <a href="https://hexdocs.pm/ex_cldr/2.22.1/Cldr.html#known_number_sy
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">validate_number_system</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:latn</span><span class="w">
-</span><span class="p" data-group-id="3422759597-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:latn</span><span class="p" data-group-id="3422759597-1">}</span><span class="w">
+</span><span class="p" data-group-id="8066317895-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:latn</span><span class="p" data-group-id="8066317895-1">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">validate_number_system</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:default</span><span class="w">
-</span><span class="p" data-group-id="3422759597-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:latn</span><span class="p" data-group-id="3422759597-2">}</span><span class="w">
+</span><span class="p" data-group-id="8066317895-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="ss">:latn</span><span class="p" data-group-id="8066317895-2">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">validate_number_system</span><span class="w"> </span><span class="s">&quot;en&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:unknown</span><span class="w">
-</span><span class="p" data-group-id="3422759597-3">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="3422759597-4">{</span><span class="nc">Cldr.UnknownNumberSystemError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The number system :unknown is unknown&quot;</span><span class="p" data-group-id="3422759597-4">}</span><span class="p" data-group-id="3422759597-3">}</span><span class="w">
+</span><span class="p" data-group-id="8066317895-3">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="8066317895-4">{</span><span class="nc">Cldr.UnknownNumberSystemError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The number system :unknown is unknown&quot;</span><span class="p" data-group-id="8066317895-4">}</span><span class="p" data-group-id="8066317895-3">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Number</span><span class="o">.</span><span class="n">validate_number_system</span><span class="w"> </span><span class="s">&quot;zz&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">:default</span><span class="w">
-</span><span class="p" data-group-id="3422759597-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3422759597-6">{</span><span class="nc">Cldr.UnknownLocaleError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The locale </span><span class="se">\&quot;</span><span class="s">zz</span><span class="se">\&quot;</span><span class="s"> is not known.&quot;</span><span class="p" data-group-id="3422759597-6">}</span><span class="p" data-group-id="3422759597-5">}</span></code></pre>
+</span><span class="p" data-group-id="8066317895-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8066317895-6">{</span><span class="nc">Cldr.UnknownLocaleError</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The locale </span><span class="se">\&quot;</span><span class="s">zz</span><span class="se">\&quot;</span><span class="s"> is not known.&quot;</span><span class="p" data-group-id="8066317895-6">}</span><span class="p" data-group-id="8066317895-5">}</span></code></pre>
   </section>
 </section>
 

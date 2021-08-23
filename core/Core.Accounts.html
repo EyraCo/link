@@ -10,7 +10,7 @@
     <title>Core.Accounts — core v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-167f8f208a.js"></script>
+    <script src="dist/sidebar_items-001e35d7d9.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -285,6 +285,27 @@ it in the database.</p></div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#list_coordinators/0">list_coordinators()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_researchers/0">list_researchers()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_students/0">list_students()</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#mark_as_visited/2">mark_as_visited(user, page)</a>
 
   </div>
@@ -378,7 +399,7 @@ Functions
     </a>
     <h1 class="signature">apply_user_email(user, password, attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L127" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L141" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -393,11 +414,11 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
   <a href="#apply_user_email/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">apply_user_email</span><span class="p" data-group-id="1733173212-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1733173212-2">%{</span><span class="ss">email</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1733173212-2">}</span><span class="p" data-group-id="1733173212-1">)</span><span class="w">
-</span><span class="p" data-group-id="1733173212-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1733173212-4">%</span><span class="nc" data-group-id="1733173212-4">User</span><span class="p" data-group-id="1733173212-4">{</span><span class="p" data-group-id="1733173212-4">}</span><span class="p" data-group-id="1733173212-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">apply_user_email</span><span class="p" data-group-id="5317085371-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5317085371-2">%{</span><span class="ss">email</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="5317085371-2">}</span><span class="p" data-group-id="5317085371-1">)</span><span class="w">
+</span><span class="p" data-group-id="5317085371-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5317085371-4">%</span><span class="nc" data-group-id="5317085371-4">User</span><span class="p" data-group-id="5317085371-4">{</span><span class="p" data-group-id="5317085371-4">}</span><span class="p" data-group-id="5317085371-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">apply_user_email</span><span class="p" data-group-id="1733173212-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1733173212-6">%{</span><span class="ss">email</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1733173212-6">}</span><span class="p" data-group-id="1733173212-5">)</span><span class="w">
-</span><span class="p" data-group-id="1733173212-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1733173212-8">%</span><span class="nc" data-group-id="1733173212-8">Ecto.Changeset</span><span class="p" data-group-id="1733173212-8">{</span><span class="p" data-group-id="1733173212-8">}</span><span class="p" data-group-id="1733173212-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">apply_user_email</span><span class="p" data-group-id="5317085371-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5317085371-6">%{</span><span class="ss">email</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="5317085371-6">}</span><span class="p" data-group-id="5317085371-5">)</span><span class="w">
+</span><span class="p" data-group-id="5317085371-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5317085371-8">%</span><span class="nc" data-group-id="5317085371-8">Ecto.Changeset</span><span class="p" data-group-id="5317085371-8">{</span><span class="p" data-group-id="5317085371-8">}</span><span class="p" data-group-id="5317085371-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="change_profile/2">
@@ -411,7 +432,7 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
     </a>
     <h1 class="signature">change_profile(profile, attrs \\ %{})</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L405" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L419" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -435,7 +456,7 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
     </a>
     <h1 class="signature">change_user_email(user, attrs \\ %{})</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L110" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L124" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -449,8 +470,8 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
   <a href="#change_user_email/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_email</span><span class="p" data-group-id="7574669703-1">(</span><span class="n">user</span><span class="p" data-group-id="7574669703-1">)</span><span class="w">
-</span><span class="p" data-group-id="7574669703-2">%</span><span class="nc" data-group-id="7574669703-2">Ecto.Changeset</span><span class="p" data-group-id="7574669703-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7574669703-3">%</span><span class="nc" data-group-id="7574669703-3">User</span><span class="p" data-group-id="7574669703-3">{</span><span class="p" data-group-id="7574669703-3">}</span><span class="p" data-group-id="7574669703-2">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_email</span><span class="p" data-group-id="9430204002-1">(</span><span class="n">user</span><span class="p" data-group-id="9430204002-1">)</span><span class="w">
+</span><span class="p" data-group-id="9430204002-2">%</span><span class="nc" data-group-id="9430204002-2">Ecto.Changeset</span><span class="p" data-group-id="9430204002-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9430204002-3">%</span><span class="nc" data-group-id="9430204002-3">User</span><span class="p" data-group-id="9430204002-3">{</span><span class="p" data-group-id="9430204002-3">}</span><span class="p" data-group-id="9430204002-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="change_user_password/2">
@@ -464,7 +485,7 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
     </a>
     <h1 class="signature">change_user_password(user, attrs \\ %{})</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L186" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L200" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -478,8 +499,8 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
   <a href="#change_user_password/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_password</span><span class="p" data-group-id="9477088700-1">(</span><span class="n">user</span><span class="p" data-group-id="9477088700-1">)</span><span class="w">
-</span><span class="p" data-group-id="9477088700-2">%</span><span class="nc" data-group-id="9477088700-2">Ecto.Changeset</span><span class="p" data-group-id="9477088700-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9477088700-3">%</span><span class="nc" data-group-id="9477088700-3">User</span><span class="p" data-group-id="9477088700-3">{</span><span class="p" data-group-id="9477088700-3">}</span><span class="p" data-group-id="9477088700-2">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_password</span><span class="p" data-group-id="5288717041-1">(</span><span class="n">user</span><span class="p" data-group-id="5288717041-1">)</span><span class="w">
+</span><span class="p" data-group-id="5288717041-2">%</span><span class="nc" data-group-id="5288717041-2">Ecto.Changeset</span><span class="p" data-group-id="5288717041-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5288717041-3">%</span><span class="nc" data-group-id="5288717041-3">User</span><span class="p" data-group-id="5288717041-3">{</span><span class="p" data-group-id="5288717041-3">}</span><span class="p" data-group-id="5288717041-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="change_user_registration/2">
@@ -493,7 +514,7 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
     </a>
     <h1 class="signature">change_user_registration(user, attrs \\ %{})</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L95" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L109" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -507,8 +528,8 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
   <a href="#change_user_registration/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_registration</span><span class="p" data-group-id="9185036300-1">(</span><span class="n">user</span><span class="p" data-group-id="9185036300-1">)</span><span class="w">
-</span><span class="p" data-group-id="9185036300-2">%</span><span class="nc" data-group-id="9185036300-2">Ecto.Changeset</span><span class="p" data-group-id="9185036300-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9185036300-3">%</span><span class="nc" data-group-id="9185036300-3">User</span><span class="p" data-group-id="9185036300-3">{</span><span class="p" data-group-id="9185036300-3">}</span><span class="p" data-group-id="9185036300-2">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_registration</span><span class="p" data-group-id="6970642251-1">(</span><span class="n">user</span><span class="p" data-group-id="6970642251-1">)</span><span class="w">
+</span><span class="p" data-group-id="6970642251-2">%</span><span class="nc" data-group-id="6970642251-2">Ecto.Changeset</span><span class="p" data-group-id="6970642251-2">{</span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6970642251-3">%</span><span class="nc" data-group-id="6970642251-3">User</span><span class="p" data-group-id="6970642251-3">{</span><span class="p" data-group-id="6970642251-3">}</span><span class="p" data-group-id="6970642251-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="confirm_user/1">
@@ -520,7 +541,7 @@ it in the database.</p><h2 id="apply_user_email/3-examples" class="section-headi
     </a>
     <h1 class="signature">confirm_user(token)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L280" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L294" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -543,7 +564,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">delete_session_token(token)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L240" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L254" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -565,7 +586,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">deliver_already_activated_notification(user, login_url)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L270" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L284" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -587,7 +608,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">deliver_update_email_instructions(user, current_email, update_email_url_fun)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L169" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L183" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -601,8 +622,8 @@ and the token is deleted.</p>
   <a href="#deliver_update_email_instructions/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_update_email_instructions</span><span class="p" data-group-id="6199404004-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">current_email</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_update_email_url</span><span class="p" data-group-id="6199404004-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:edit</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="6199404004-2">)</span><span class="p" data-group-id="6199404004-1">)</span><span class="w">
-</span><span class="p" data-group-id="6199404004-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6199404004-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="6199404004-4">}</span><span class="p" data-group-id="6199404004-3">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_update_email_instructions</span><span class="p" data-group-id="0489973175-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">current_email</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_update_email_url</span><span class="p" data-group-id="0489973175-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:edit</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="0489973175-2">)</span><span class="p" data-group-id="0489973175-1">)</span><span class="w">
+</span><span class="p" data-group-id="0489973175-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0489973175-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="0489973175-4">}</span><span class="p" data-group-id="0489973175-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="deliver_user_confirmation_instructions/2">
@@ -614,7 +635,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">deliver_user_confirmation_instructions(user, confirmation_url_fun)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L259" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L273" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -628,11 +649,11 @@ and the token is deleted.</p>
   <a href="#deliver_user_confirmation_instructions/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_confirmation_instructions</span><span class="p" data-group-id="5488900677-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_confirmation_url</span><span class="p" data-group-id="5488900677-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:confirm</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="5488900677-2">)</span><span class="p" data-group-id="5488900677-1">)</span><span class="w">
-</span><span class="p" data-group-id="5488900677-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5488900677-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="5488900677-4">}</span><span class="p" data-group-id="5488900677-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_confirmation_instructions</span><span class="p" data-group-id="2123352089-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_confirmation_url</span><span class="p" data-group-id="2123352089-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:confirm</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="2123352089-2">)</span><span class="p" data-group-id="2123352089-1">)</span><span class="w">
+</span><span class="p" data-group-id="2123352089-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2123352089-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="2123352089-4">}</span><span class="p" data-group-id="2123352089-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_confirmation_instructions</span><span class="p" data-group-id="5488900677-5">(</span><span class="n">confirmed_user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_confirmation_url</span><span class="p" data-group-id="5488900677-6">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:confirm</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="5488900677-6">)</span><span class="p" data-group-id="5488900677-5">)</span><span class="w">
-</span><span class="p" data-group-id="5488900677-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="ss">:already_confirmed</span><span class="p" data-group-id="5488900677-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_confirmation_instructions</span><span class="p" data-group-id="2123352089-5">(</span><span class="n">confirmed_user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_confirmation_url</span><span class="p" data-group-id="2123352089-6">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:confirm</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="2123352089-6">)</span><span class="p" data-group-id="2123352089-5">)</span><span class="w">
+</span><span class="p" data-group-id="2123352089-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="ss">:already_confirmed</span><span class="p" data-group-id="2123352089-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="deliver_user_reset_password_instructions/2">
@@ -644,7 +665,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">deliver_user_reset_password_instructions(user, reset_password_url_fun)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L307" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L321" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -658,8 +679,8 @@ and the token is deleted.</p>
   <a href="#deliver_user_reset_password_instructions/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_reset_password_instructions</span><span class="p" data-group-id="8436643847-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_reset_password_url</span><span class="p" data-group-id="8436643847-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:edit</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="8436643847-2">)</span><span class="p" data-group-id="8436643847-1">)</span><span class="w">
-</span><span class="p" data-group-id="8436643847-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8436643847-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="8436643847-4">}</span><span class="p" data-group-id="8436643847-3">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deliver_user_reset_password_instructions</span><span class="p" data-group-id="7182963880-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Routes</span><span class="o">.</span><span class="n">user_reset_password_url</span><span class="p" data-group-id="7182963880-2">(</span><span class="n">conn</span><span class="p">,</span><span class="w"> </span><span class="ss">:edit</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="7182963880-2">)</span><span class="p" data-group-id="7182963880-1">)</span><span class="w">
+</span><span class="p" data-group-id="7182963880-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7182963880-4">%{</span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p">,</span><span class="w"> </span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7182963880-4">}</span><span class="p" data-group-id="7182963880-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="generate_user_session_token/1">
@@ -671,7 +692,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">generate_user_session_token(user)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L223" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L237" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -693,7 +714,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_display_label(user)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L368" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L382" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -715,7 +736,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_features(user_id)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L416" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L430" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -737,7 +758,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_profile(user_id)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L358" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L372" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -759,7 +780,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_user!(id)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L64" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L78" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -773,10 +794,10 @@ and the token is deleted.</p>
   <a href="#get_user!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="0370920972-1">(</span><span class="mi">123</span><span class="p" data-group-id="0370920972-1">)</span><span class="w">
-</span><span class="p" data-group-id="0370920972-2">%</span><span class="nc" data-group-id="0370920972-2">User</span><span class="p" data-group-id="0370920972-2">{</span><span class="p" data-group-id="0370920972-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="2816202437-1">(</span><span class="mi">123</span><span class="p" data-group-id="2816202437-1">)</span><span class="w">
+</span><span class="p" data-group-id="2816202437-2">%</span><span class="nc" data-group-id="2816202437-2">User</span><span class="p" data-group-id="2816202437-2">{</span><span class="p" data-group-id="2816202437-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="0370920972-3">(</span><span class="mi">456</span><span class="p" data-group-id="0370920972-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="2816202437-3">(</span><span class="mi">456</span><span class="p" data-group-id="2816202437-3">)</span><span class="w">
 </span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
   </section>
 </section>
@@ -789,7 +810,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_user_by_email(email)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L26" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L40" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -803,10 +824,10 @@ and the token is deleted.</p>
   <a href="#get_user_by_email/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="1341046548-1">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p" data-group-id="1341046548-1">)</span><span class="w">
-</span><span class="p" data-group-id="1341046548-2">%</span><span class="nc" data-group-id="1341046548-2">User</span><span class="p" data-group-id="1341046548-2">{</span><span class="p" data-group-id="1341046548-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="5702642029-1">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p" data-group-id="5702642029-1">)</span><span class="w">
+</span><span class="p" data-group-id="5702642029-2">%</span><span class="nc" data-group-id="5702642029-2">User</span><span class="p" data-group-id="5702642029-2">{</span><span class="p" data-group-id="5702642029-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="1341046548-3">(</span><span class="s">&quot;unknown@example.com&quot;</span><span class="p" data-group-id="1341046548-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="5702642029-3">(</span><span class="s">&quot;unknown@example.com&quot;</span><span class="p" data-group-id="5702642029-3">)</span><span class="w">
 </span><span class="no">nil</span></code></pre>
   </section>
 </section>
@@ -819,7 +840,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_user_by_email_and_password(email, password)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L42" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L56" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -833,10 +854,10 @@ and the token is deleted.</p>
   <a href="#get_user_by_email_and_password/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email_and_password</span><span class="p" data-group-id="6005957089-1">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;correct_password&quot;</span><span class="p" data-group-id="6005957089-1">)</span><span class="w">
-</span><span class="p" data-group-id="6005957089-2">%</span><span class="nc" data-group-id="6005957089-2">User</span><span class="p" data-group-id="6005957089-2">{</span><span class="p" data-group-id="6005957089-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email_and_password</span><span class="p" data-group-id="2144831973-1">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;correct_password&quot;</span><span class="p" data-group-id="2144831973-1">)</span><span class="w">
+</span><span class="p" data-group-id="2144831973-2">%</span><span class="nc" data-group-id="2144831973-2">User</span><span class="p" data-group-id="2144831973-2">{</span><span class="p" data-group-id="2144831973-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email_and_password</span><span class="p" data-group-id="6005957089-3">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid_password&quot;</span><span class="p" data-group-id="6005957089-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email_and_password</span><span class="p" data-group-id="2144831973-3">(</span><span class="s">&quot;foo@example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid_password&quot;</span><span class="p" data-group-id="2144831973-3">)</span><span class="w">
 </span><span class="no">nil</span></code></pre>
   </section>
 </section>
@@ -849,7 +870,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_user_by_reset_password_token(token)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L326" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L340" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -863,10 +884,10 @@ and the token is deleted.</p>
   <a href="#get_user_by_reset_password_token/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_reset_password_token</span><span class="p" data-group-id="2658756645-1">(</span><span class="s">&quot;validtoken&quot;</span><span class="p" data-group-id="2658756645-1">)</span><span class="w">
-</span><span class="p" data-group-id="2658756645-2">%</span><span class="nc" data-group-id="2658756645-2">User</span><span class="p" data-group-id="2658756645-2">{</span><span class="p" data-group-id="2658756645-2">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_reset_password_token</span><span class="p" data-group-id="8021251934-1">(</span><span class="s">&quot;validtoken&quot;</span><span class="p" data-group-id="8021251934-1">)</span><span class="w">
+</span><span class="p" data-group-id="8021251934-2">%</span><span class="nc" data-group-id="8021251934-2">User</span><span class="p" data-group-id="8021251934-2">{</span><span class="p" data-group-id="8021251934-2">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_reset_password_token</span><span class="p" data-group-id="2658756645-3">(</span><span class="s">&quot;invalidtoken&quot;</span><span class="p" data-group-id="2658756645-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_reset_password_token</span><span class="p" data-group-id="8021251934-3">(</span><span class="s">&quot;invalidtoken&quot;</span><span class="p" data-group-id="8021251934-3">)</span><span class="w">
 </span><span class="no">nil</span></code></pre>
   </section>
 </section>
@@ -879,7 +900,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">get_user_by_session_token(token)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L232" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L246" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -892,6 +913,72 @@ and the token is deleted.</p>
 <p>Gets the user with the given signed token.</p>
   </section>
 </section>
+<section class="detail" id="list_coordinators/0">
+
+  <div class="detail-header">
+    <a href="#list_coordinators/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_coordinators()</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L22" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="list_researchers/0">
+
+  <div class="detail-header">
+    <a href="#list_researchers/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_researchers()</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L18" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="list_students/0">
+
+  <div class="detail-header">
+    <a href="#list_students/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_students()</h1>
+
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L14" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="mark_as_visited/2">
 
   <div class="detail-header">
@@ -901,7 +988,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">mark_as_visited(user, page)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L442" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L456" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -923,7 +1010,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">register_user(attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L80" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L94" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -937,11 +1024,11 @@ and the token is deleted.</p>
   <a href="#register_user/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="5570681882-1">(</span><span class="p" data-group-id="5570681882-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="5570681882-2">}</span><span class="p" data-group-id="5570681882-1">)</span><span class="w">
-</span><span class="p" data-group-id="5570681882-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5570681882-4">%</span><span class="nc" data-group-id="5570681882-4">User</span><span class="p" data-group-id="5570681882-4">{</span><span class="p" data-group-id="5570681882-4">}</span><span class="p" data-group-id="5570681882-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="8056537005-1">(</span><span class="p" data-group-id="8056537005-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="8056537005-2">}</span><span class="p" data-group-id="8056537005-1">)</span><span class="w">
+</span><span class="p" data-group-id="8056537005-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8056537005-4">%</span><span class="nc" data-group-id="8056537005-4">User</span><span class="p" data-group-id="8056537005-4">{</span><span class="p" data-group-id="8056537005-4">}</span><span class="p" data-group-id="8056537005-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="5570681882-5">(</span><span class="p" data-group-id="5570681882-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="5570681882-6">}</span><span class="p" data-group-id="5570681882-5">)</span><span class="w">
-</span><span class="p" data-group-id="5570681882-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5570681882-8">%</span><span class="nc" data-group-id="5570681882-8">Ecto.Changeset</span><span class="p" data-group-id="5570681882-8">{</span><span class="p" data-group-id="5570681882-8">}</span><span class="p" data-group-id="5570681882-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="8056537005-5">(</span><span class="p" data-group-id="8056537005-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="8056537005-6">}</span><span class="p" data-group-id="8056537005-5">)</span><span class="w">
+</span><span class="p" data-group-id="8056537005-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8056537005-8">%</span><span class="nc" data-group-id="8056537005-8">Ecto.Changeset</span><span class="p" data-group-id="8056537005-8">{</span><span class="p" data-group-id="8056537005-8">}</span><span class="p" data-group-id="8056537005-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="reset_user_password/2">
@@ -953,7 +1040,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">reset_user_password(user, attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L347" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L361" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -967,11 +1054,11 @@ and the token is deleted.</p>
   <a href="#reset_user_password/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">reset_user_password</span><span class="p" data-group-id="9521172936-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9521172936-2">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;new long password&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password_confirmation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;new long password&quot;</span><span class="p" data-group-id="9521172936-2">}</span><span class="p" data-group-id="9521172936-1">)</span><span class="w">
-</span><span class="p" data-group-id="9521172936-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9521172936-4">%</span><span class="nc" data-group-id="9521172936-4">User</span><span class="p" data-group-id="9521172936-4">{</span><span class="p" data-group-id="9521172936-4">}</span><span class="p" data-group-id="9521172936-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">reset_user_password</span><span class="p" data-group-id="1477278250-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1477278250-2">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;new long password&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password_confirmation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;new long password&quot;</span><span class="p" data-group-id="1477278250-2">}</span><span class="p" data-group-id="1477278250-1">)</span><span class="w">
+</span><span class="p" data-group-id="1477278250-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1477278250-4">%</span><span class="nc" data-group-id="1477278250-4">User</span><span class="p" data-group-id="1477278250-4">{</span><span class="p" data-group-id="1477278250-4">}</span><span class="p" data-group-id="1477278250-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">reset_user_password</span><span class="p" data-group-id="9521172936-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9521172936-6">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;valid&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password_confirmation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;not the same&quot;</span><span class="p" data-group-id="9521172936-6">}</span><span class="p" data-group-id="9521172936-5">)</span><span class="w">
-</span><span class="p" data-group-id="9521172936-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9521172936-8">%</span><span class="nc" data-group-id="9521172936-8">Ecto.Changeset</span><span class="p" data-group-id="9521172936-8">{</span><span class="p" data-group-id="9521172936-8">}</span><span class="p" data-group-id="9521172936-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">reset_user_password</span><span class="p" data-group-id="1477278250-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1477278250-6">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;valid&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password_confirmation</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;not the same&quot;</span><span class="p" data-group-id="1477278250-6">}</span><span class="p" data-group-id="1477278250-5">)</span><span class="w">
+</span><span class="p" data-group-id="1477278250-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1477278250-8">%</span><span class="nc" data-group-id="1477278250-8">Ecto.Changeset</span><span class="p" data-group-id="1477278250-8">{</span><span class="p" data-group-id="1477278250-8">}</span><span class="p" data-group-id="1477278250-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="update_features/2">
@@ -983,7 +1070,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">update_features(features, changeset)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L431" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L445" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1005,7 +1092,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">update_profile(profile, attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L383" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L397" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1027,7 +1114,7 @@ and the token is deleted.</p>
     </a>
     <h1 class="signature">update_user_email(user, token)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L140" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L154" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1050,7 +1137,7 @@ The confirmed_at date is also updated to the current time.</p>
     </a>
     <h1 class="signature">update_user_password(user, password, attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L202" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L216" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1064,11 +1151,11 @@ The confirmed_at date is also updated to the current time.</p>
   <a href="#update_user_password/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_user_password</span><span class="p" data-group-id="7062832408-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7062832408-2">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7062832408-2">}</span><span class="p" data-group-id="7062832408-1">)</span><span class="w">
-</span><span class="p" data-group-id="7062832408-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7062832408-4">%</span><span class="nc" data-group-id="7062832408-4">User</span><span class="p" data-group-id="7062832408-4">{</span><span class="p" data-group-id="7062832408-4">}</span><span class="p" data-group-id="7062832408-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_user_password</span><span class="p" data-group-id="3684949481-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;valid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3684949481-2">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3684949481-2">}</span><span class="p" data-group-id="3684949481-1">)</span><span class="w">
+</span><span class="p" data-group-id="3684949481-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3684949481-4">%</span><span class="nc" data-group-id="3684949481-4">User</span><span class="p" data-group-id="3684949481-4">{</span><span class="p" data-group-id="3684949481-4">}</span><span class="p" data-group-id="3684949481-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="n">update_user_password</span><span class="p" data-group-id="7062832408-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7062832408-6">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7062832408-6">}</span><span class="p" data-group-id="7062832408-5">)</span><span class="w">
-</span><span class="p" data-group-id="7062832408-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7062832408-8">%</span><span class="nc" data-group-id="7062832408-8">Ecto.Changeset</span><span class="p" data-group-id="7062832408-8">{</span><span class="p" data-group-id="7062832408-8">}</span><span class="p" data-group-id="7062832408-7">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_user_password</span><span class="p" data-group-id="3684949481-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;invalid password&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3684949481-6">%{</span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3684949481-6">}</span><span class="p" data-group-id="3684949481-5">)</span><span class="w">
+</span><span class="p" data-group-id="3684949481-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3684949481-8">%</span><span class="nc" data-group-id="3684949481-8">Ecto.Changeset</span><span class="p" data-group-id="3684949481-8">{</span><span class="p" data-group-id="3684949481-8">}</span><span class="p" data-group-id="3684949481-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="update_user_profile/3">
@@ -1080,7 +1167,7 @@ The confirmed_at date is also updated to the current time.</p>
     </a>
     <h1 class="signature">update_user_profile(user, user_attrs, profile_attrs)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L389" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L403" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1102,7 +1189,7 @@ The confirmed_at date is also updated to the current time.</p>
     </a>
     <h1 class="signature">visited?(user, page)</h1>
 
-      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L467" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/eyra/eylixir/blob/master/lib/core/surfconext/accounts.ex#L481" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>

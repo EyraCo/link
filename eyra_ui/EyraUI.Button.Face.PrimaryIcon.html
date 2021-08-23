@@ -10,7 +10,7 @@
     <title>EyraUI.Button.Face.PrimaryIcon — eyra_ui v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
 
-    <script src="dist/sidebar_items-e07a248822.js"></script>
+    <script src="dist/sidebar_items-554051ec00.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -90,7 +90,7 @@ EyraUI.Button.Face.PrimaryIcon <small class="app-vsn">(eyra_ui v0.1.0)</small>
   <a href="#module-properties" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Properties
 </h2>
-<ul><li><strong>to</strong> <em>:string, required: true</em></li><li><strong>label</strong> <em>:string, required: true</em></li><li><strong>icon</strong> <em>:string, required: true</em></li><li><strong>bg_color</strong> <em>:string, required: true</em></li></ul>
+<ul><li><strong>vm</strong> <em>:map, required: true</em></li></ul>
         </section>
 
 
@@ -109,6 +109,55 @@ EyraUI.Button.Face.PrimaryIcon <small class="app-vsn">(eyra_ui v0.1.0)</small>
     </h2>
 <div class="summary-row">
   <div class="summary-signature">
+    <a href="#bg_color/2">bg_color(view_model, default \\ &quot;bg-primary&quot;)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_bg_color?/1">has_bg_color?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_icon?/1">has_icon?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_label?/1">has_label?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#has_text_color?/1">has_text_color?(view_model)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#icon/2">icon(view_model, default \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#label/2">label(view_model, default \\ nil)</a>
+
+  </div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
     <a href="#mount/1">mount(socket)</a>
 
   </div>
@@ -123,6 +172,13 @@ EyraUI.Button.Face.PrimaryIcon <small class="app-vsn">(eyra_ui v0.1.0)</small>
   </div>
 
     <div class="summary-synopsis"><p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveComponent.html#c:render/1"><code class="inline">Phoenix.LiveComponent.render/1</code></a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#text_color/2">text_color(view_model, default \\ &quot;text-white&quot;)</a>
+
+  </div>
 
 </div>
 <div class="summary-row">
@@ -149,6 +205,131 @@ EyraUI.Button.Face.PrimaryIcon <small class="app-vsn">(eyra_ui v0.1.0)</small>
 Functions
           </h1>
           <div class="functions-list">
+<section class="detail" id="bg_color/2">
+
+    <span id="bg_color/1"></span>
+
+  <div class="detail-header">
+    <a href="#bg_color/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">bg_color(view_model, default \\ &quot;bg-primary&quot;)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_bg_color?/1">
+
+  <div class="detail-header">
+    <a href="#has_bg_color?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_bg_color?(view_model)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_icon?/1">
+
+  <div class="detail-header">
+    <a href="#has_icon?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_icon?(view_model)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_label?/1">
+
+  <div class="detail-header">
+    <a href="#has_label?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_label?(view_model)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="has_text_color?/1">
+
+  <div class="detail-header">
+    <a href="#has_text_color?/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">has_text_color?(view_model)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="icon/2">
+
+    <span id="icon/1"></span>
+
+  <div class="detail-header">
+    <a href="#icon/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">icon(view_model, default \\ nil)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
+<section class="detail" id="label/2">
+
+    <span id="label/1"></span>
+
+  <div class="detail-header">
+    <a href="#label/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">label(view_model, default \\ nil)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
+  </section>
+</section>
 <section class="detail" id="mount/1">
 
   <div class="detail-header">
@@ -181,6 +362,25 @@ Functions
   <section class="docstring">
 
 <p>Callback implementation for <a href="https://hexdocs.pm/phoenix_live_view/0.15.7/Phoenix.LiveComponent.html#c:render/1"><code class="inline">Phoenix.LiveComponent.render/1</code></a>.</p>
+  </section>
+</section>
+<section class="detail" id="text_color/2">
+
+    <span id="text_color/1"></span>
+
+  <div class="detail-header">
+    <a href="#text_color/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">text_color(view_model, default \\ &quot;text-white&quot;)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
   </section>
 </section>
 <section class="detail" id="update/2">
