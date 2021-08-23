@@ -42,9 +42,6 @@ EyraUI.Component.html
 EyraUI.Components.OldSkool.html
 EyraUI.Container.Bar.html
 EyraUI.Container.BarItem.html
-EyraUI.Container.ContentArea.html
-EyraUI.Container.FormArea.html
-EyraUI.Container.SheetArea.html
 EyraUI.Container.Wrap.html
 EyraUI.Create.html
 EyraUI.Dynamic.html
@@ -63,17 +60,8 @@ EyraUI.Navigation.Alpine.html
 EyraUI.Navigation.Button.html
 EyraUI.Navigation.DeadGet.html
 EyraUI.Navigation.DeadPost.html
-EyraUI.Navigation.DesktopMenu.html
-EyraUI.Navigation.DesktopNavbar.html
 EyraUI.Navigation.Get.html
-EyraUI.Navigation.Menu.html
-EyraUI.Navigation.MenuItem.html
-EyraUI.Navigation.MobileMenu.html
-EyraUI.Navigation.MobileNavbar.html
-EyraUI.Navigation.NativeMenu.html
-EyraUI.Navigation.Navbar.html
 EyraUI.Navigation.New.html
-EyraUI.Navigation.TabbarItem.html
 EyraUI.Panel.Panel.html
 EyraUI.Panel.USP.html
 EyraUI.Selector.Item.html
@@ -106,7 +94,7 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-b11c8d0a87.js
-dist/sidebar_items-ecfabb85aa.js
+dist/search_items-aa00f87cdc.js
+dist/sidebar_items-e07a248822.js
 index.html
 search.html
