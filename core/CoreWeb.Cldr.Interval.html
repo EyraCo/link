@@ -253,11 +253,11 @@ date, time or datetime is formatted instead of an interval</p></li></ul><h2 id="
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="kn">use</span><span class="w"> </span><span class="nc">CalendarInterval</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="sx">~I&quot;2020-01-01/12&quot;</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
-</span><span class="p" data-group-id="9953206040-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="p" data-group-id="9953206040-1">}</span><span class="w">
+</span><span class="p" data-group-id="5693594083-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="p" data-group-id="5693594083-1">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">range</span><span class="p" data-group-id="9953206040-2">(</span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-12-31]</span><span class="p" data-group-id="9953206040-2">)</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">range</span><span class="p" data-group-id="5693594083-2">(</span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-12-31]</span><span class="p" data-group-id="5693594083-2">)</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
-</span><span class="p" data-group-id="9953206040-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Thu, Dec 31, 2020&quot;</span><span class="p" data-group-id="9953206040-3">}</span></code></pre>
+</span><span class="p" data-group-id="5693594083-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Thu, Dec 31, 2020&quot;</span><span class="p" data-group-id="5693594083-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="to_string/3">
@@ -338,31 +338,31 @@ date, time or datetime is formatted instead of an interval</p></li></ul><h2 id="
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-12-31]</span><span class="w">
-</span><span class="p" data-group-id="9489615703-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jan 1 – Dec 31, 2020&quot;</span><span class="p" data-group-id="9489615703-1">}</span><span class="w">
+</span><span class="p" data-group-id="3698208238-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jan 1 – Dec 31, 2020&quot;</span><span class="p" data-group-id="3698208238-1">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-01-12]</span><span class="w">
-</span><span class="p" data-group-id="9489615703-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jan 1 – 12, 2020&quot;</span><span class="p" data-group-id="9489615703-2">}</span><span class="w">
+</span><span class="p" data-group-id="3698208238-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Jan 1 – 12, 2020&quot;</span><span class="p" data-group-id="3698208238-2">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-01-12]</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
-</span><span class="p" data-group-id="9489615703-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="p" data-group-id="9489615703-3">}</span><span class="w">
+</span><span class="p" data-group-id="3698208238-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="p" data-group-id="3698208238-3">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-12-01]</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="p">,</span><span class="w"> </span><span class="ss">style</span><span class="p">:</span><span class="w"> </span><span class="ss">:year_and_month</span><span class="w">
-</span><span class="p" data-group-id="9489615703-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;January – December 2020&quot;</span><span class="p" data-group-id="9489615703-4">}</span><span class="w">
+</span><span class="p" data-group-id="3698208238-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;January – December 2020&quot;</span><span class="p" data-group-id="3698208238-4">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="kn">use</span><span class="w"> </span><span class="nc">CalendarInterval</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="sx">~I&quot;2020-01-01/12&quot;</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
-</span><span class="p" data-group-id="9489615703-5">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="p" data-group-id="9489615703-5">}</span><span class="w">
+</span><span class="p" data-group-id="3698208238-5">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="p" data-group-id="3698208238-5">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~U[2020-01-01 00:00:00.0Z]</span><span class="p">,</span><span class="w"> </span><span class="ld">~U[2020-12-01 10:05:00.0Z]</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
-</span><span class="p" data-group-id="9489615703-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;January 1, 2020 at 12:00:00 AM UTC – December 1, 2020 at 10:05:00 AM UTC&quot;</span><span class="p" data-group-id="9489615703-6">}</span><span class="w">
+</span><span class="p" data-group-id="3698208238-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;January 1, 2020 at 12:00:00 AM UTC – December 1, 2020 at 10:05:00 AM UTC&quot;</span><span class="p" data-group-id="3698208238-6">}</span><span class="w">
 
 </span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string</span><span class="w"> </span><span class="ld">~U[2020-01-01 00:00:00.0Z]</span><span class="p">,</span><span class="w"> </span><span class="ld">~U[2020-01-01 10:05:00.0Z]</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
-</span><span class="p" data-group-id="9489615703-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;January 1, 2020 at 12:00:00 AM UTC – 10:05:00 AM UTC&quot;</span><span class="p" data-group-id="9489615703-7">}</span></code></pre>
+</span><span class="p" data-group-id="3698208238-7">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;January 1, 2020 at 12:00:00 AM UTC – 10:05:00 AM UTC&quot;</span><span class="p" data-group-id="3698208238-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="to_string!/2">
@@ -444,7 +444,7 @@ date, time or datetime is formatted instead of an interval</p></li></ul><h2 id="
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
 </span><span class="s">&quot;Wed, Jan 1 – Sun, Jan 12, 2020&quot;</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">range</span><span class="p" data-group-id="9697143091-1">(</span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-12-31]</span><span class="p" data-group-id="9697143091-1">)</span><span class="p">,</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">CoreWeb.Cldr.Interval</span><span class="o">.</span><span class="n">to_string!</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">range</span><span class="p" data-group-id="5206974634-1">(</span><span class="ld">~D[2020-01-01]</span><span class="p">,</span><span class="w"> </span><span class="ld">~D[2020-12-31]</span><span class="p" data-group-id="5206974634-1">)</span><span class="p">,</span><span class="w">
 </span><span class="gp unselectable">...&gt; </span><span class="ss">format</span><span class="p">:</span><span class="w"> </span><span class="ss">:long</span><span class="w">
 </span><span class="s">&quot;Wed, Jan 1 – Thu, Dec 31, 2020&quot;</span></code></pre>
   </section>
