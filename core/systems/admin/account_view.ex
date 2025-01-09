@@ -262,8 +262,8 @@ defmodule Systems.Admin.AccountView do
         <.spacing value="M" />
 
         <table class="w-full">
-          <%= for user_row <- @users do %>
-            <UserListItem.small {user_row} />
+          <%= for user_item <- @users do %>
+            <.live_component module={UserListItem} id={user_item.email} user_item={user_item} />
           <% end %>
         </table>
       </Area.content>

@@ -145,3 +145,15 @@ msgstr ""
 #, elixir-autogen, elixir-format
 msgid "people.search.alread_added.message"
 msgstr ""
+
+#, elixir-autogen, elixir-format
+msgid "people.cancel_remove.label"
+msgstr "Annuleren"
+
+#, elixir-autogen, elixir-format
+msgid "people.confirm_remove.label"
+msgstr "Ik weet het zeker"
+
+#, elixir-autogen, elixir-format
+msgid "people.confirm_remove.text"
+msgstr "Weet u zeker dat u uzelf wilt verwijderen van dit project?"

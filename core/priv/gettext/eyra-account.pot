@@ -145,3 +145,15 @@ msgstr ""
 #, elixir-autogen, elixir-format
 msgid "people.search.alread_added.message"
 msgstr ""
+
+#, elixir-autogen, elixir-format
+msgid "people.cancel_remove.label"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+msgid "people.confirm_remove.label"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+msgid "people.confirm_remove.text"
+msgstr ""

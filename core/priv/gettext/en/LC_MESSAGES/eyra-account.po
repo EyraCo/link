@@ -145,3 +145,15 @@ msgstr "Who do you want to add?"
 #, elixir-autogen, elixir-format
 msgid "people.search.alread_added.message"
 msgstr "Already added"
+
+#, elixir-autogen, elixir-format
+msgid "people.cancel_remove.label"
+msgstr "Cancel"
+
+#, elixir-autogen, elixir-format
+msgid "people.confirm_remove.label"
+msgstr "I am sure"
+
+#, elixir-autogen, elixir-format
+msgid "people.confirm_remove.text"
+msgstr "Are you sure you want to remove yourself from this project?"
