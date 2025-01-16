@@ -308,7 +308,7 @@ defmodule Systems.Admin.ImportRewardsPage do
   @impl true
   def render(assigns) do
     ~H"""
-    <.live_workspace title="Import rewards" menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+    <.live_workspace title="Import rewards" menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
       <Margin.y id={:page_top} />
       <Area.content>
         <Panel.flat bg_color="bg-grey1">

@@ -38,7 +38,7 @@ defmodule Systems.Lab.ContentPage do
         initial_tab={@initial_tab}
         tabbar_size={@tabbar_size}
         menus={@menus}
-        modal={@modal}
+        modals={@modals}
         popup={@popup}
         dialog={@dialog}
       />

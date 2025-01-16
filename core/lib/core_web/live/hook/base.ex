@@ -10,7 +10,7 @@ defmodule CoreWeb.Live.Hook.Base do
         live_view_module: live_view_module,
         popup: nil,
         dialog: nil,
-        modal: nil
+        modals: []
       )
     }
   end

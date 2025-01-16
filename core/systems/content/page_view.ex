@@ -11,10 +11,6 @@ defmodule Systems.Content.PageView do
     }
   end
 
-  def handle_event("close", _, socket) do
-    {:noreply, socket |> send_event(:parent, "close_page")}
-  end
-
   @impl true
   def render(assigns) do
     ~H"""

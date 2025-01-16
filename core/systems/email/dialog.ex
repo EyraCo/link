@@ -34,7 +34,7 @@ defmodule Systems.Email.Dialog do
   end
 
   @impl true
-  def handle_event("close", _unsigned_params, socket) do
+  def handle_event("close", _, socket) do
     {:noreply, update_parent(socket, :close)}
   end
 

@@ -36,7 +36,7 @@ defmodule Systems.Support.TicketPage do
   @impl true
   def render(assigns) do
     ~H"""
-    <.live_workspace title={dgettext("eyra-admin", "ticket.title")} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+    <.live_workspace title={dgettext("eyra-admin", "ticket.title")} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
       <Area.content>
         <Margin.y id={:page_top} />
         <%= if @vm.member do %>

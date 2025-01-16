@@ -32,7 +32,7 @@ defmodule Systems.Document.PDFNavView do
   @impl true
   def compose(:ready_button, %{myself: myself}) do
     %{
-      action: %{type: :send, event: "close", target: myself},
+      action: %{type: :send, event: "complete", target: myself},
       face: %{
         type: :primary,
         bg_color: "bg-success",
@@ -55,7 +55,7 @@ defmodule Systems.Document.PDFNavView do
   end
 
   @impl true
-  def handle_event("close", _payload, socket) do
+  def handle_event("complete", _payload, socket) do
     {:noreply, socket |> send_event(:parent, "complete_task")}
   end
 

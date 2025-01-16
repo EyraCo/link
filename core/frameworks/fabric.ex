@@ -4,8 +4,12 @@ defmodule Fabric do
   @type composition :: child() | element()
   @type child :: %{module: module(), params: map()}
   @type element :: map() | binary() | number()
+  @type socket :: Phoenix.LiveView.Socket.t()
 
   @callback compose(id :: composition_id(), a :: assigns()) :: composition() | nil
+  @callback handle_modal_closed(socket(), any()) :: socket()
+
+  @optional_callbacks handle_modal_closed: 2
 
   # although colons and periods are formaly supported, they seem cause errors when calling 'querySelectorAll' on 'Document': '#item_cell_44::system::-PID-0-24547-1-_item_form_group' is not a valid selector.
   # Example: dom.js:39 Uncaught DOMException: Failed to execute 'querySelectorAll' on 'Document': '#item_cell_44::workflow::page_item_form_group' is not a valid selector.
@@ -23,6 +27,30 @@ defmodule Fabric do
       import Fabric.Html
 
       require Logger
+
+      def update(
+            %{
+              fabric_event: %{name: :handle_modal_closed, payload: %{live_component: %{ref: ref}}}
+            },
+            %{assigns: %{fabric: fabric}} = socket
+          ) do
+        # Sent from Fabric.handle_modal_closed/2 indicating this live component has been closed as a modal view. Notify the parent.
+        {:ok, socket |> send_event(:parent, :handle_modal_closed)}
+      end
+
+      def update(
+            %{fabric_event: %{name: :handle_modal_closed, payload: %{source: %{name: name}}}},
+            %{assigns: %{fabric: fabric}} = socket
+          ) do
+        socket =
+          if function_exported?(__MODULE__, :handle_modal_closed, 2) do
+            apply(__MODULE__, :handle_modal_closed, [socket, name])
+          else
+            socket
+          end
+
+        {:ok, socket}
+      end
 
       def reset_fabric(%Phoenix.LiveView.Socket{} = socket) do
         reset_children(socket)
@@ -67,7 +95,7 @@ defmodule Fabric do
         Fabric.compose_child(assigns, child_name, compose(child_name, assigns))
       end
 
-      def compose(_id, _assigns) do
+      def compose(id, assigns) do
         Logger.error("compose/2 not implemented")
         nil
       end
@@ -237,6 +265,14 @@ defmodule Fabric do
 
   # MODAL
 
+  def prepared_modal?(context, child_name) do
+    if child = get_child(context, child_name) do
+      Map.get(child, :prepared_modal_style) != nil
+    else
+      false
+    end
+  end
+
   def prepare_modal(context, nil, _modal_style) do
     Logger.error("Can not prepare modal with unknown child")
     context
@@ -245,7 +281,15 @@ defmodule Fabric do
   def prepare_modal(context, child_name, modal_style)
       when is_atom(child_name) or is_binary(child_name) do
     child = get_child(context, child_name)
-    prepare_modal(context, child, modal_style)
+    prepared_modal_style = Map.get(child, :prepared_modal_style)
+
+    if prepared_modal_style do
+      Logger.debug("already prepared modal style #{prepared_modal_style} for #{child_name}")
+      context
+    else
+      child |> Map.put(child, prepared_modal_style: modal_style)
+      prepare_modal(context, child, modal_style)
+    end
   end
 
   def prepare_modal(
@@ -289,8 +333,25 @@ defmodule Fabric do
   end
 
   def hide_modal(%{fabric: fabric} = assigns, child_name) do
-    send_event(fabric, :root, "hide_modal")
-    Phoenix.Component.assign(assigns, fabric: remove_child(fabric, child_name))
+    if child = get_child(fabric, child_name) do
+      send_event(fabric, :root, "hide_modal", %{live_component: child})
+      Phoenix.Component.assign(assigns, fabric: remove_child(fabric, child_name))
+    else
+      Logger.warning("Can not hide modal with unknown child '#{child_name}'")
+      assigns
+    end
+  end
+
+  @doc """
+    Sends a handle_modal_closed event to the live component. This event is handled by Fabric and is
+    delegated as an optional callback to the parent. See Fabric.__using__/1 for more information.
+  """
+  def handle_modal_closed(
+        %Phoenix.LiveView.Socket{} = socket,
+        %Fabric.LiveComponent.RefModel{} = ref
+      ) do
+    send_event(ref, %{name: :handle_modal_closed, payload: %{live_component: %{ref: ref}}})
+    socket
   end
 
   # POPUP

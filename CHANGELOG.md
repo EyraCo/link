@@ -11,6 +11,9 @@
 
 ## \#7.1 unreleased
 
+* Fixed: Resolved an issue where Feldspar apps were not preloaded in certain edge cases, resulting in excessive user wait times.
+* Added: Support for multiple modal views, including background preloading for improved performance.
+
 ## \#7 2025-01-07
 
 * Changed: Bump erlang to 27.1.2

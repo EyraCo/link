@@ -95,7 +95,7 @@ defmodule Systems.Pool.DetailPage do
   @impl true
   def render(assigns) do
     ~H"""
-    <.live_workspace title={@vm.title} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+    <.live_workspace title={@vm.title} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
       <%= if @email_dialog do %>
         <div
           class="fixed z-20 left-0 top-0 w-full h-full bg-black bg-opacity-20"

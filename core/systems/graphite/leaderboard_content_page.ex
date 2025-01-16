@@ -41,7 +41,7 @@ defmodule Systems.Graphite.LeaderboardContentPage do
         initial_tab={@initial_tab}
         tabbar_size={@tabbar_size}
         menus={@menus}
-        modal={@modal}
+        modals={@modals}
         popup={@popup}
         dialog={@dialog}
       />

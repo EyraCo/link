@@ -1,6 +1,7 @@
 defmodule Systems.Assignment.CrewPage do
   use CoreWeb, :live_view
   use CoreWeb.Layouts.Stripped.Composer
+  use Frameworks.Pixel.ModalView
 
   on_mount({CoreWeb.Live.Hook.Base, __MODULE__})
   on_mount({CoreWeb.Live.Hook.Viewport, __MODULE__})
@@ -9,7 +10,6 @@ defmodule Systems.Assignment.CrewPage do
 
   alias Core.ImageHelpers
   alias Frameworks.Pixel.Hero
-  alias Frameworks.Pixel.ModalView
   alias Frameworks.Signal
 
   alias Systems.Assignment
@@ -40,8 +40,6 @@ defmodule Systems.Assignment.CrewPage do
       |> assign(
         id: id,
         image_info: nil,
-        modal: nil,
-        modal_visible: false,
         panel_form: nil
       )
       |> update_panel_info(session)
@@ -155,31 +153,6 @@ defmodule Systems.Assignment.CrewPage do
   end
 
   @impl true
-  def handle_event("prepare_modal", modal, socket) do
-    {:noreply, socket |> assign(modal: modal, modal_visible: false)}
-  end
-
-  @impl true
-  def handle_event("show_modal", modal, socket) do
-    {:noreply, socket |> assign(modal: modal, modal_visible: true)}
-  end
-
-  @impl true
-  def handle_event("hide_modal", _, socket) do
-    {:noreply, socket |> assign(modal: nil, modal_visible: false)}
-  end
-
-  @impl true
-  def handle_event(
-        "close_modal",
-        _,
-        %{assigns: %{modal: %{live_component: %{ref: ref}}}} = socket
-      ) do
-    send_event(ref, %{name: "close", payload: nil})
-    {:noreply, socket |> assign(modal: nil, modal_visible: false)}
-  end
-
-  @impl true
   def handle_event(name, event, socket) do
     Logger.debug("[CrewPage] Forwarding event to flow: #{name}")
 
@@ -245,9 +218,7 @@ defmodule Systems.Assignment.CrewPage do
           </div>
         </:header>
 
-        <div class={"#{if @modal_visible do "block" else "hidden" end}"}>
-          <ModalView.dynamic modal={@modal} />
-        </div>
+        <ModalView.dynamic modals={@modals} />
 
         <%!-- hidden auto submit form --%>
         <%= if @panel_form do %>

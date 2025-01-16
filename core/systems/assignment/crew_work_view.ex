@@ -362,24 +362,6 @@ defmodule Systems.Assignment.CrewWorkView do
   end
 
   @impl true
-  def handle_event("close_task", _, socket) do
-    {
-      :noreply,
-      socket
-      |> select_current_item()
-    }
-  end
-
-  @impl true
-  def handle_event("close_page", _, socket) do
-    {
-      :noreply,
-      socket
-      |> select_current_item()
-    }
-  end
-
-  @impl true
   def handle_event(
         "work_item_selected",
         %{"item" => item_id},
@@ -456,15 +438,24 @@ defmodule Systems.Assignment.CrewWorkView do
   end
 
   @impl true
-  def handle_event("close", %{source: %{name: :consent_page}}, socket) do
-    {:noreply, socket |> hide_popup(:consent_page)}
+  def handle_modal_closed(socket, :tool_ref_view) do
+    socket |> update_selected_item()
+  end
+
+  def handle_modal_closed(socket, name) do
+    Logger.debug("unhandled modal closed event for: #{name}")
+    socket
   end
 
   # Private
 
   defp prepare_modal_tool_ref_view_if_needed(%{assigns: %{fabric: fabric}} = socket) do
     if Fabric.exists?(fabric, :tool_ref_view) do
-      prepare_modal(socket, :tool_ref_view, :full)
+      if prepared_modal?(fabric, :prepared_modal) do
+        socket |> assign(tool_initialized: true)
+      else
+        socket |> prepare_modal(:tool_ref_view, :full)
+      end
     else
       Logger.warning("No tool ref view found to prepare modal")
       socket
@@ -559,21 +550,6 @@ defmodule Systems.Assignment.CrewWorkView do
       end)
 
     assign(socket, work_items: work_items)
-  end
-
-  defp select_current_item(%{assigns: %{work_items: work_items}} = socket)
-       when length(work_items) <= 1 do
-    socket
-  end
-
-  defp select_current_item(%{assigns: %{selected_item_id: selected_item_id}} = socket)
-       when not is_nil(selected_item_id) do
-    socket |> update_selected_item()
-  end
-
-  defp select_current_item(socket) do
-    Logger.warning("No selected_item_id found to select")
-    socket
   end
 
   defp select_next_item(%{assigns: %{work_items: work_items}} = socket)

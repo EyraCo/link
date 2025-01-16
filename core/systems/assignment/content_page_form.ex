@@ -17,6 +17,8 @@ defmodule Systems.Assignment.ContentPageForm do
         },
         socket
       ) do
+    confirming_status_off = Map.get(socket.assigns, :confirming_status_off, false)
+
     {
       :ok,
       socket
@@ -26,9 +28,11 @@ defmodule Systems.Assignment.ContentPageForm do
         page_key: page_key,
         opt_in?: opt_in?,
         on_text: on_text,
-        off_text: off_text
+        off_text: off_text,
+        confirming_status_off: confirming_status_off
       )
       |> update_page_ref()
+      |> update_status()
       |> compose_child(:switch)
       |> compose_child(:content_page_form)
     }
@@ -41,12 +45,27 @@ defmodule Systems.Assignment.ContentPageForm do
     socket |> assign(page_ref: page_ref)
   end
 
+  def update_status(%{assigns: %{confirming_status_off: true}} = socket) do
+    socket |> assign(status: :off)
+  end
+
+  def update_status(%{assigns: %{page_ref: page_ref}} = socket) do
+    status =
+      if page_ref do
+        :on
+      else
+        :off
+      end
+
+    socket |> assign(status: status)
+  end
+
   @impl true
   def compose(:switch, %{
-        page_ref: page_ref,
         opt_in?: opt_in?,
         on_text: on_text,
-        off_text: off_text
+        off_text: off_text,
+        status: status
       }) do
     %{
       module: Pixel.Switch,
@@ -54,12 +73,7 @@ defmodule Systems.Assignment.ContentPageForm do
         opt_in?: opt_in?,
         on_text: on_text,
         off_text: off_text,
-        status:
-          if page_ref do
-            :on
-          else
-            :off
-          end
+        status: status
       }
     }
   end
@@ -114,6 +128,7 @@ defmodule Systems.Assignment.ContentPageForm do
       {
         :noreply,
         socket
+        |> update_switch(confirming_status_off: true)
         |> compose_child(:confirmation_modal)
         |> show_modal(:confirmation_modal, :dialog)
       }
@@ -127,6 +142,7 @@ defmodule Systems.Assignment.ContentPageForm do
   def handle_event("cancelled", %{source: %{name: :confirmation_modal}}, socket) do
     {:noreply,
      socket
+     |> update_switch(confirming_status_off: false)
      |> hide_modal(:confirmation_modal)}
   end
 
@@ -137,11 +153,28 @@ defmodule Systems.Assignment.ContentPageForm do
         %{assigns: %{page_ref: page_ref}} = socket
       ) do
     {:ok, _} = Assignment.Public.delete_page_ref(page_ref)
-    {:noreply, socket |> hide_modal(:confirmation_modal)}
+
+    {
+      :noreply,
+      socket
+      |> assign(confirming_status_off: false)
+      |> hide_modal(:confirmation_modal)
+    }
   end
 
   @impl true
-  @spec render(any()) :: Phoenix.LiveView.Rendered.t()
+  def handle_modal_closed(socket, :confirmation_modal) do
+    update_switch(socket, confirming_status_off: false)
+  end
+
+  defp update_switch(socket, confirming_status_off: confirming_status_off) do
+    socket
+    |> assign(confirming_status_off: confirming_status_off)
+    |> update_status()
+    |> compose_child(:switch)
+  end
+
+  @impl true
   def render(assigns) do
     ~H"""
       <div>

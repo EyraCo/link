@@ -15,12 +15,6 @@ defmodule Systems.Consent.SignatureView do
   def compose(:source, %{signature: %{revision: %{source: source}}}), do: source
   def compose(:source, _), do: ""
 
-  # Events
-
-  def handle_event("close", _, socket) do
-    {:noreply, socket |> send_event(:parent, "close_page")}
-  end
-
   @impl true
   def render(assigns) do
     ~H"""

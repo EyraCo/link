@@ -22,7 +22,7 @@ defmodule Systems.Support.HelpdeskPage do
   @impl true
   def render(assigns) do
     ~H"""
-    <.live_workspace title={@vm.title} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+    <.live_workspace title={@vm.title} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
       <Area.content>
         <Area.form>
           <Margin.y id={:page_top} />

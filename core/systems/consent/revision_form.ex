@@ -33,7 +33,6 @@ defmodule Systems.Consent.RevisionForm do
         visible: false,
         form: form
       )
-      |> compose_child(:wysiwyg_area)
     }
   end
 

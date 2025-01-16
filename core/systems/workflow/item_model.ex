@@ -36,7 +36,7 @@ defmodule Systems.Workflow.ItemModel do
       changeset(item, %{})
       |> validate()
 
-    changeset.valid?() && tool_ready?(item)
+    changeset.valid? && tool_ready?(item)
   end
 
   defp tool_ready?(%{tool_ref: tool_ref}) do

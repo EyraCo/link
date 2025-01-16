@@ -101,18 +101,8 @@ defmodule Systems.Graphite.ToolView do
   end
 
   @impl true
-  def handle_event("submitted", _payload, socket) do
-    {:noreply, socket |> send_event(:parent, "complete_task")}
-  end
-
-  @impl true
   def handle_event("done", _payload, socket) do
     {:noreply, socket |> send_event(:parent, "complete_task")}
-  end
-
-  @impl true
-  def handle_event("cancel", _payload, socket) do
-    {:noreply, socket |> send_event(:parent, "cancel_task")}
   end
 
   @impl true

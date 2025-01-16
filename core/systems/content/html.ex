@@ -12,7 +12,7 @@ defmodule Systems.Content.Html do
   alias Frameworks.Pixel.Tabbed
   alias Frameworks.Pixel.Navigation
 
-  attr(:modal, :map, required: true)
+  attr(:modals, :map, required: true)
   attr(:popup, :map, required: true)
   attr(:dialog, :map, required: true)
 
@@ -21,14 +21,14 @@ defmodule Systems.Content.Html do
     <div>
       <.popup_block popup={@popup} />
       <.plain_dialog_block dialog={@dialog} />
-      <ModalView.dynamic modal={@modal} />
+      <ModalView.dynamic modals={@modals} />
     </div>
     """
   end
 
   attr(:title, :string, required: true)
   attr(:menus, :map, required: true)
-  attr(:modal, :map, required: true)
+  attr(:modals, :list, required: true)
   attr(:popup, :map, required: true)
   attr(:dialog, :map, required: true)
 
@@ -42,7 +42,7 @@ defmodule Systems.Content.Html do
         <%= render_slot(@top_bar) %>
       </:top_bar>
 
-      <.live_block modal={@modal} popup={@popup} dialog={@dialog}/>
+      <.live_block modals={@modals} popup={@popup} dialog={@dialog}/>
 
       <%= render_slot(@inner_block) %>
     </.workspace>
@@ -52,7 +52,7 @@ defmodule Systems.Content.Html do
   attr(:user, :map, required: true)
   attr(:user_agent, :map, required: true)
   attr(:menus, :map, required: true)
-  attr(:modal, :map, required: true)
+  attr(:modals, :list, required: true)
   attr(:popup, :map, required: true)
   attr(:dialog, :map, required: true)
 
@@ -66,7 +66,7 @@ defmodule Systems.Content.Html do
         <%= render_slot(@hero) %>
       </:hero>
 
-      <.live_block modal={@modal} popup={@popup} dialog={@dialog}/>
+      <.live_block modals={@modals} popup={@popup} dialog={@dialog}/>
 
       <%= render_slot(@inner_block) %>
     </.website>
@@ -75,7 +75,7 @@ defmodule Systems.Content.Html do
 
   attr(:title, :string, default: nil)
   attr(:menus, :map, required: true)
-  attr(:modal, :map, required: true)
+  attr(:modals, :list, required: true)
   attr(:popup, :map, required: true)
   attr(:dialog, :map, required: true)
 
@@ -84,7 +84,7 @@ defmodule Systems.Content.Html do
   def live_stripped(assigns) do
     ~H"""
     <.stripped title={@title} menus={@menus} >
-      <.live_block modal={@modal} popup={@popup} dialog={@dialog}/>
+      <.live_block modals={@modals} popup={@popup} dialog={@dialog}/>
       <%= render_slot(@inner_block) %>
     </.stripped>
     """
@@ -92,7 +92,7 @@ defmodule Systems.Content.Html do
 
   attr(:title, :string, required: true)
   attr(:menus, :map, required: true)
-  attr(:modal, :map, required: true)
+  attr(:modals, :list, required: true)
   attr(:popup, :map, required: true)
   attr(:dialog, :map, required: true)
   attr(:tabs, :list, required: true)
@@ -102,7 +102,7 @@ defmodule Systems.Content.Html do
 
   def tabbar_page(assigns) do
     ~H"""
-      <.live_workspace title={@title} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+      <.live_workspace title={@title} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
         <%= if Enum.count(@tabs) > 0 do %>
           <Navigation.tabbar>
             <Tabbed.bar id={@tabbar_id} tabs={@tabs} initial_tab={@initial_tab} type={:segmented} />
@@ -118,7 +118,7 @@ defmodule Systems.Content.Html do
 
   attr(:title, :string, required: true)
   attr(:menus, :map, required: true)
-  attr(:modal, :map, required: true)
+  attr(:modals, :list, required: true)
   attr(:popup, :map, required: true)
   attr(:dialog, :map, required: true)
   attr(:tabs, :list, required: true)
@@ -133,7 +133,7 @@ defmodule Systems.Content.Html do
   def management_page(assigns) do
     ~H"""
       <div id={:content_management_page} phx-hook="Viewport">
-        <.live_workspace title={@title} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+        <.live_workspace title={@title} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
           <:top_bar>
             <Navigation.action_bar breadcrumbs={@breadcrumbs} right_bar_buttons={@actions} more_buttons={@more_actions}>
               <Tabbed.bar id={@tabbar_id} tabs={@tabs} initial_tab={@initial_tab} size={@tabbar_size} />

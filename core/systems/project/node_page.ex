@@ -97,7 +97,7 @@ defmodule Systems.Project.NodePage do
   def render(assigns) do
     ~H"""
     <div>
-      <.live_workspace title={@vm.title} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+      <.live_workspace title={@vm.title} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
         <:top_bar>
           <div class="hidden md:block">
             <Area.content>

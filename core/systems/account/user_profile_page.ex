@@ -36,7 +36,7 @@ defmodule Systems.Account.UserProfilePage do
   @impl true
   def render(assigns) do
     ~H"""
-    <.live_workspace title={@vm.title} menus={@menus} modal={@modal} popup={@popup} dialog={@dialog}>
+    <.live_workspace title={@vm.title} menus={@menus} modals={@modals} popup={@popup} dialog={@dialog}>
       <.stack fabric={@fabric} />
     </.live_workspace>
     """

@@ -69,11 +69,6 @@ defmodule Systems.Workflow.ToolRefView do
   end
 
   @impl true
-  def handle_event("close", _, socket) do
-    {:noreply, socket |> send_event(:parent, "close_task")}
-  end
-
-  @impl true
   def handle_event("complete_task", _payload, socket) do
     {:noreply, socket |> send_event(:parent, "complete_task")}
   end
@@ -91,7 +86,7 @@ defmodule Systems.Workflow.ToolRefView do
   @impl true
   def render(assigns) do
     ~H"""
-    <div class="w-full h-full">
+    <div class="tool-ref-view w-full h-full">
       <.stack fabric={@fabric} />
     </div>
     """

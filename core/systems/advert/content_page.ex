@@ -37,7 +37,7 @@ defmodule Systems.Advert.ContentPage do
         show_errors={@vm.show_errors}
         breadcrumbs={@vm.breadcrumbs}
         menus={@menus}
-        modal={@modal}
+        modals={@modals}
         popup={@popup}
         dialog={@dialog}
         tabbar_id={@tabbar_id}
